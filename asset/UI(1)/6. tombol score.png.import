@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/6. tombol score.png-2dde3b8a7c56bbbdda346a4a57165023.stex"
+
+[deps]
+
+source_file="res://asset/UI(1)/6. tombol score.png"
+source_md5="72dc800f00b204a50e72cbdcb86be0fe"
+
+dest_files=[ "res://.import/6. tombol score.png-2dde3b8a7c56bbbdda346a4a57165023.stex" ]
+dest_md5="1198d42f8662cca3b8644467757b2483"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

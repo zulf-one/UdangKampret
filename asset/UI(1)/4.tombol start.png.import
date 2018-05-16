@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/4.tombol start.png-5e44eb8cbcd5c056a5841af48bea6f50.stex"
+
+[deps]
+
+source_file="res://asset/UI(1)/4.tombol start.png"
+source_md5="176faf32a7b93387223edf45292f2974"
+
+dest_files=[ "res://.import/4.tombol start.png-5e44eb8cbcd5c056a5841af48bea6f50.stex" ]
+dest_md5="16893ed6806b51c107312252349f28a8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

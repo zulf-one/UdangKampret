@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/1.1 background menu.png-3e58aa232e5dc20fede6d0b3551fa17c.stex"
+
+[deps]
+
+source_file="res://asset/UI(1)/1.1 background menu.png"
+source_md5="2e54874a0af8d23aa80a275495084ff7"
+
+dest_files=[ "res://.import/1.1 background menu.png-3e58aa232e5dc20fede6d0b3551fa17c.stex" ]
+dest_md5="91e98619b46a4c96a77c8bc4e0b41a52"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

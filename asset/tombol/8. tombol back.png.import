@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/8. tombol back.png-98da6484a8c129aec034627ae0b37cf5.stex"
+
+[deps]
+
+source_file="res://asset/tombol/8. tombol back.png"
+source_md5="9feecb0563104c4f3e6552c301c55626"
+
+dest_files=[ "res://.import/8. tombol back.png-98da6484a8c129aec034627ae0b37cf5.stex" ]
+dest_md5="84f9e20d2df9bf9b6b6265c5058914f5"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

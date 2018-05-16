@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/5. tombol rules.png-d67291dc5f0063e418812ef52679ce0e.stex"
+
+[deps]
+
+source_file="res://asset/tombol/5. tombol rules.png"
+source_md5="0cf671dafc376fd6eb0c1b9d41ec89f8"
+
+dest_files=[ "res://.import/5. tombol rules.png-d67291dc5f0063e418812ef52679ce0e.stex" ]
+dest_md5="239ed3de6ce313247fe7d57f032ce94d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
