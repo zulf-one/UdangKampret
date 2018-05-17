@@ -32,6 +32,21 @@ func _fukkenhide():
 	$map9.hide()
 	pass
 
+func _popclose():
+	$pop_kotaA.hide()
+	$pop_kotaB.hide()
+	$pop_kotaC.hide()
+	$pop_kotaD.hide()
+	$pop_dist1.hide()
+	$pop_dist2.hide()
+	$pop_dist3.hide()
+	$pop_dist4.hide()
+	$pop_supp1.hide()
+	$pop_supp2.hide()
+	$pop_supp3.hide()
+	$pop_supp4.hide()
+	pass
+
 func _on_01_pressed():
 	_fukkenhide()
 	$Button.show()
@@ -98,4 +113,69 @@ func _on_09_pressed():
 func _on_rumah_pressed():
 	_fukkenhide()
 	$map5.show()
+	pass # replace with function body
+
+func _on_back_pressed():
+	_popclose()
+	pass # replace with function body
+
+
+func _on_kota_1_pressed():
+	$pop_kotaA.show()
+	pass # replace with function body
+
+
+func _on_dist_1_pressed():
+	$pop_dist1.show()
+	pass # replace with function body
+
+
+func _on_dist_2_pressed():
+	$pop_dist2.show()
+	pass # replace with function body
+
+
+
+func _on_supplier2_pressed():
+	$pop_supp2.show()
+	pass # replace with function body
+
+
+func _on_supplier1_pressed():
+	$pop_supp1.show()
+	pass # replace with function body
+
+
+func _on_dist_3_pressed():
+	$pop_dist3.show()
+	pass # replace with function body
+
+
+func _on_kota_2_pressed():
+	$pop_kotaB.show()
+	pass # replace with function body
+
+
+func _on_kota_3_pressed():
+	$pop_kotaC.show()
+	pass # replace with function body
+
+
+func _on_dist_4_pressed():
+	$pop_dist4.show()
+	pass # replace with function body
+
+
+func _on_kota_4_pressed():
+	$pop_kotaD.show()
+	pass # replace with function body
+
+
+func _on_supplier4_pressed():
+	$pop_supp4.show()
+	pass # replace with function body
+
+
+func _on_supplier3_pressed():
+	$pop_supp3.show()
 	pass # replace with function body

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://Play.gd" type="Script" id=1]
 [ext_resource path="res://asset/map1.png" type="Texture" id=2]
@@ -32,6 +32,18 @@
 [ext_resource path="res://asset/LOC1.png" type="Texture" id=30]
 [ext_resource path="res://asset/Money.png" type="Texture" id=31]
 [ext_resource path="res://asset/home_tr.png" type="Texture" id=32]
+[ext_resource path="res://asset/popup/popup kota A.png" type="Texture" id=33]
+[ext_resource path="res://asset/popup/popup kota B.png" type="Texture" id=34]
+[ext_resource path="res://asset/popup/popup kota C.png" type="Texture" id=35]
+[ext_resource path="res://asset/popup/popup kota D.png" type="Texture" id=36]
+[ext_resource path="res://asset/popup/popup distri A.png" type="Texture" id=37]
+[ext_resource path="res://asset/popup/popup distri B.png" type="Texture" id=38]
+[ext_resource path="res://asset/popup/popup distri C.png" type="Texture" id=39]
+[ext_resource path="res://asset/popup/popup distri D.png" type="Texture" id=40]
+[ext_resource path="res://asset/popup/popup supp A.png" type="Texture" id=41]
+[ext_resource path="res://asset/popup/popup supp B.png" type="Texture" id=42]
+[ext_resource path="res://asset/popup/popup supp C.png" type="Texture" id=43]
+[ext_resource path="res://asset/popup/popup supp D.png" type="Texture" id=44]
 
 [node name="Play" type="Node" index="0"]
 
@@ -40,7 +52,6 @@ script = ExtResource( 1 )
 [node name="map1" type="Control" parent="." index="0"]
 
 editor/display_folded = true
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -453,6 +464,8 @@ _sections_unfolded = [ "Rect" ]
 
 [node name="map5" type="Control" parent="." index="4"]
 
+editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -469,7 +482,7 @@ size_flags_vertical = 1
 
 [node name="bg" type="Sprite" parent="map5" index="0"]
 
-position = Vector2( 640, 300 )
+position = Vector2( 640, 310 )
 texture = ExtResource( 16 )
 
 [node name="perusahaan" type="Button" parent="map5" index="1"]
@@ -1093,7 +1106,8 @@ align = 1
 [node name="monie" type="Sprite" parent="." index="11"]
 
 editor/display_folded = true
-position = Vector2( 1030, 80 )
+position = Vector2( 1080, 50 )
+scale = Vector2( 0.608602, 0.62987 )
 texture = ExtResource( 31 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="monie" index="0"]
@@ -1153,6 +1167,582 @@ icon = ExtResource( 32 )
 flat = true
 align = 1
 
+[node name="pop_kotaA" type="Control" parent="." index="13"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_kotaA" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 33 )
+
+[node name="back" type="Button" parent="pop_kotaA" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_kotaB" type="Control" parent="." index="14"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_kotaB" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 34 )
+
+[node name="back" type="Button" parent="pop_kotaB" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_kotaC" type="Control" parent="." index="15"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_kotaC" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 35 )
+
+[node name="back" type="Button" parent="pop_kotaC" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_kotaD" type="Control" parent="." index="16"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_kotaD" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 36 )
+
+[node name="back" type="Button" parent="pop_kotaD" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_dist1" type="Control" parent="." index="17"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_dist1" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 37 )
+
+[node name="back" type="Button" parent="pop_dist1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_dist2" type="Control" parent="." index="18"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_dist2" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 38 )
+
+[node name="back" type="Button" parent="pop_dist2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_dist3" type="Control" parent="." index="19"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_dist3" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 39 )
+
+[node name="back" type="Button" parent="pop_dist3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_dist4" type="Control" parent="." index="20"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_dist4" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 40 )
+
+[node name="back" type="Button" parent="pop_dist4" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_supp1" type="Control" parent="." index="21"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_supp1" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 41 )
+
+[node name="back" type="Button" parent="pop_supp1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_supp2" type="Control" parent="." index="22"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_supp2" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 42 )
+
+[node name="back" type="Button" parent="pop_supp2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_supp3" type="Control" parent="." index="23"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_supp3" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 43 )
+
+[node name="back" type="Button" parent="pop_supp3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="pop_supp4" type="Control" parent="." index="24"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="pop_supp4" index="0"]
+
+position = Vector2( 600, 240 )
+texture = ExtResource( 44 )
+
+[node name="back" type="Button" parent="pop_supp4" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 540.0
+margin_top = 340.0
+margin_right = 640.0
+margin_bottom = 430.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[connection signal="pressed" from="map1/kota_1" to="." method="_on_kota_1_pressed"]
+
+[connection signal="pressed" from="map1/dist_1" to="." method="_on_dist_1_pressed"]
+
+[connection signal="pressed" from="map1/dist_2" to="." method="_on_dist_2_pressed"]
+
+[connection signal="pressed" from="map2/supplier2" to="." method="_on_supplier2_pressed"]
+
+[connection signal="pressed" from="map3/supplier1" to="." method="_on_supplier1_pressed"]
+
+[connection signal="pressed" from="map4/supplier3" to="." method="_on_supplier3_pressed"]
+
+[connection signal="pressed" from="map6/dist_3" to="." method="_on_dist_3_pressed"]
+
+[connection signal="pressed" from="map6/kota_2" to="." method="_on_kota_2_pressed"]
+
+[connection signal="pressed" from="map7/kota_3" to="." method="_on_kota_3_pressed"]
+
+[connection signal="pressed" from="map8/dist_4" to="." method="_on_dist_4_pressed"]
+
+[connection signal="pressed" from="map9/kota_4" to="." method="_on_kota_4_pressed"]
+
+[connection signal="pressed" from="map9/supplier4" to="." method="_on_supplier4_pressed"]
+
 [connection signal="pressed" from="move/GridContainer/01" to="." method="_on_01_pressed"]
 
 [connection signal="pressed" from="move/GridContainer/02" to="." method="_on_02_pressed"]
@@ -1174,5 +1764,29 @@ align = 1
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 
 [connection signal="pressed" from="rumah" to="." method="_on_rumah_pressed"]
+
+[connection signal="pressed" from="pop_kotaA/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_kotaB/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_kotaC/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_kotaD/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_dist1/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_dist2/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_dist3/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_dist4/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_supp1/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_supp2/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_supp3/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="pop_supp4/back" to="." method="_on_back_pressed"]
 
 

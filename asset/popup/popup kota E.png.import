@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/popup kota E.png-beb71766c6d193cced7aa0c453e5992e.stex"
+
+[deps]
+
+source_file="res://asset/popup/popup kota E.png"
+source_md5="ccaaae7a2f542012615d73a23d83fb18"
+
+dest_files=[ "res://.import/popup kota E.png-beb71766c6d193cced7aa0c453e5992e.stex" ]
+dest_md5="6acfa35e3f7ad9f22dd94abeb8c8928f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
