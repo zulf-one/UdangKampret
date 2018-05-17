@@ -179,3 +179,8 @@ func _on_supplier4_pressed():
 func _on_supplier3_pressed():
 	$pop_supp3.show()
 	pass # replace with function body
+
+
+func _on_ext_pressed():
+	get_tree().change_scene("res://MainMenu.tscn")
+	pass # replace with function body
