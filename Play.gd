@@ -19,9 +19,9 @@ func _on_Button_pressed():
 	$move.show()
 	pass # replace with function body
 
-
-func _on_01_pressed():
+func _fukkenhide():
 	$move.hide()
+	$map1.hide()
 	$map2.hide()
 	$map3.hide()
 	$map4.hide()
@@ -30,126 +30,72 @@ func _on_01_pressed():
 	$map7.hide()
 	$map8.hide()
 	$map9.hide()
+	pass
+
+func _on_01_pressed():
+	_fukkenhide()
 	$Button.show()
 	$map1.show()
 	pass # replace with function body
 
 
 func _on_02_pressed():
-	$move.hide()
-	$map1.hide()
-	$map3.hide()
-	$map4.hide()
-	$map5.hide()
-	$map6.hide()
-	$map7.hide()
-	$map8.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map2.show()
 	pass # replace with function body
 
 
 func _on_03_pressed():
-	$move.hide()
-	$map2.hide()
-	$map1.hide()
-	$map4.hide()
-	$map5.hide()
-	$map6.hide()
-	$map7.hide()
-	$map8.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map3.show()
 	pass # replace with function body
 
 
 func _on_04_pressed():
-	$move.hide()
-	$map2.hide()
-	$map3.hide()
-	$map1.hide()
-	$map5.hide()
-	$map6.hide()
-	$map7.hide()
-	$map8.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map4.show()
 	pass # replace with function body
 
 
 func _on_05_pressed():
-	$move.hide()
-	$map2.hide()
-	$map3.hide()
-	$map4.hide()
-	$map1.hide()
-	$map6.hide()
-	$map7.hide()
-	$map8.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map5.show()
 	pass # replace with function body
 
 
 func _on_06_pressed():
-	$move.hide()
-	$map2.hide()
-	$map3.hide()
-	$map4.hide()
-	$map5.hide()
-	$map1.hide()
-	$map7.hide()
-	$map8.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map6.show()
 	pass # replace with function body
 
 
 func _on_07_pressed():
-	$move.hide()
-	$map2.hide()
-	$map3.hide()
-	$map4.hide()
-	$map5.hide()
-	$map6.hide()
-	$map1.hide()
-	$map8.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map7.show()
 	pass # replace with function body
 
 
 func _on_08_pressed():
-	$move.hide()
-	$map2.hide()
-	$map3.hide()
-	$map4.hide()
-	$map5.hide()
-	$map6.hide()
-	$map7.hide()
-	$map1.hide()
-	$map9.hide()
+	_fukkenhide()
 	$Button.show()
 	$map8.show()
 	pass # replace with function body
 
 
 func _on_09_pressed():
-	$move.hide()
-	$map2.hide()
-	$map3.hide()
-	$map4.hide()
-	$map5.hide()
-	$map6.hide()
-	$map7.hide()
-	$map8.hide()
-	$map1.hide()
+	_fukkenhide()
 	$Button.show()
 	$map9.show()
+	pass # replace with function body
+
+
+func _on_rumah_pressed():
+	_fukkenhide()
+	$map5.show()
 	pass # replace with function body

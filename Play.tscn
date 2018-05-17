@@ -1,18 +1,37 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Play.gd" type="Script" id=1]
 [ext_resource path="res://asset/map1.png" type="Texture" id=2]
-[ext_resource path="res://asset/map2.png" type="Texture" id=3]
-[ext_resource path="res://asset/map3.png" type="Texture" id=4]
-[ext_resource path="res://asset/map4.png" type="Texture" id=5]
-[ext_resource path="res://asset/map5.png" type="Texture" id=6]
-[ext_resource path="res://asset/perusahaan/perusahaan1.png" type="Texture" id=7]
-[ext_resource path="res://asset/map6.png" type="Texture" id=8]
-[ext_resource path="res://asset/map7.png" type="Texture" id=9]
-[ext_resource path="res://asset/map8.png" type="Texture" id=10]
-[ext_resource path="res://asset/map9.png" type="Texture" id=11]
-[ext_resource path="res://asset/off.png" type="Texture" id=12]
-[ext_resource path="res://asset/LOC1.png" type="Texture" id=13]
+[ext_resource path="res://asset/objek/kota1.png" type="Texture" id=3]
+[ext_resource path="res://asset/objek/distributor1.png" type="Texture" id=4]
+[ext_resource path="res://asset/objek/distributor2.png" type="Texture" id=5]
+[ext_resource path="res://asset/map2.png" type="Texture" id=6]
+[ext_resource path="res://asset/objek/tambak1.png" type="Texture" id=7]
+[ext_resource path="res://asset/objek/tambak2.png" type="Texture" id=8]
+[ext_resource path="res://asset/objek/supplier3.png" type="Texture" id=9]
+[ext_resource path="res://asset/map3.png" type="Texture" id=10]
+[ext_resource path="res://asset/objek/tambak4.png" type="Texture" id=11]
+[ext_resource path="res://asset/objek/tambak5.png" type="Texture" id=12]
+[ext_resource path="res://asset/objek/supplier1.png" type="Texture" id=13]
+[ext_resource path="res://asset/map4.png" type="Texture" id=14]
+[ext_resource path="res://asset/objek/tambak6.png" type="Texture" id=15]
+[ext_resource path="res://asset/map5.png" type="Texture" id=16]
+[ext_resource path="res://asset/perusahaan/perusahaan1.png" type="Texture" id=17]
+[ext_resource path="res://asset/map6.png" type="Texture" id=18]
+[ext_resource path="res://asset/objek/distributor3.png" type="Texture" id=19]
+[ext_resource path="res://asset/objek/kota2.png" type="Texture" id=20]
+[ext_resource path="res://asset/map7.png" type="Texture" id=21]
+[ext_resource path="res://asset/objek/kota4.png" type="Texture" id=22]
+[ext_resource path="res://asset/objek/tambak7.png" type="Texture" id=23]
+[ext_resource path="res://asset/map8.png" type="Texture" id=24]
+[ext_resource path="res://asset/objek/tambak8.png" type="Texture" id=25]
+[ext_resource path="res://asset/objek/distributor4.png" type="Texture" id=26]
+[ext_resource path="res://asset/map9.png" type="Texture" id=27]
+[ext_resource path="res://asset/objek/supplier4.png" type="Texture" id=28]
+[ext_resource path="res://asset/off.png" type="Texture" id=29]
+[ext_resource path="res://asset/LOC1.png" type="Texture" id=30]
+[ext_resource path="res://asset/Money.png" type="Texture" id=31]
+[ext_resource path="res://asset/home_tr.png" type="Texture" id=32]
 
 [node name="Play" type="Node" index="0"]
 
@@ -40,6 +59,88 @@ size_flags_vertical = 1
 position = Vector2( 640, 300 )
 texture = ExtResource( 2 )
 
+[node name="kota_1" type="Button" parent="map1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 388.0
+margin_top = 103.0
+margin_right = 1200.0
+margin_bottom = 909.0
+rect_rotation = -0.910872
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 3 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="dist_1" type="Button" parent="map1" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 990.0
+margin_top = 260.0
+margin_right = 1802.0
+margin_bottom = 1066.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 4 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="dist_2" type="Button" parent="map1" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 380.0
+margin_right = 1452.0
+margin_bottom = 1186.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 5 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
 [node name="map2" type="Control" parent="." index="1"]
 
 editor/display_folded = true
@@ -60,7 +161,88 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map2" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 3 )
+texture = ExtResource( 6 )
+
+[node name="tambak1" type="Button" parent="map2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 280.0
+margin_top = 130.0
+margin_right = 1092.0
+margin_bottom = 936.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 7 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="tambak2" type="Button" parent="map2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 590.0
+margin_top = 140.0
+margin_right = 1402.0
+margin_bottom = 946.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 8 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="supplier2" type="Button" parent="map2" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 190.0
+margin_top = 320.0
+margin_right = 1002.0
+margin_bottom = 1126.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 9 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
 
 [node name="map3" type="Control" parent="." index="2"]
 
@@ -82,7 +264,88 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map3" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 4 )
+texture = ExtResource( 10 )
+
+[node name="tambak3" type="Button" parent="map3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 230.0
+margin_top = 80.0
+margin_right = 1042.0
+margin_bottom = 886.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 11 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="tambak4" type="Button" parent="map3" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 600.0
+margin_top = 250.0
+margin_right = 1412.0
+margin_bottom = 1056.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 12 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="supplier1" type="Button" parent="map3" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 300.0
+margin_top = 350.0
+margin_right = 1112.0
+margin_bottom = 1156.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 13 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
 
 [node name="map4" type="Control" parent="." index="3"]
 
@@ -104,40 +367,18 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map4" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 5 )
+texture = ExtResource( 14 )
 
-[node name="map5" type="Control" parent="." index="4"]
-
-editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 40.0
-margin_bottom = 40.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 0
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-
-[node name="bg" type="Sprite" parent="map5" index="0"]
-
-position = Vector2( 640, 300 )
-texture = ExtResource( 6 )
-
-[node name="perusahaan" type="Button" parent="map5" index="1"]
+[node name="tambak5" type="Button" parent="map4" index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 452.0
-margin_top = 338.0
-margin_right = 1419.0
-margin_bottom = 1026.0
-rect_rotation = -31.0181
+margin_left = 420.0
+margin_top = 80.0
+margin_right = 1232.0
+margin_bottom = 886.0
 rect_scale = Vector2( 0.3, 0.3 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -150,7 +391,111 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 7 )
+icon = ExtResource( 12 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="tambak6" type="Button" parent="map4" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 530.0
+margin_top = 300.0
+margin_right = 1342.0
+margin_bottom = 1106.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 15 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="supplier3" type="Button" parent="map4" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1012.0
+margin_top = 128.0
+margin_right = 1824.0
+margin_bottom = 934.0
+rect_rotation = 21.0839
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 9 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="map5" type="Control" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = -10.0
+margin_right = 40.0
+margin_bottom = 30.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bg" type="Sprite" parent="map5" index="0"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 16 )
+
+[node name="perusahaan" type="Button" parent="map5" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 585.0
+margin_top = 103.0
+margin_right = 1552.0
+margin_bottom = 791.0
+rect_rotation = 2.82962
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 17 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -175,7 +520,62 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map6" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 8 )
+texture = ExtResource( 18 )
+
+[node name="dist_3" type="Button" parent="map6" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 150.0
+margin_top = -30.0
+margin_right = 962.0
+margin_bottom = 776.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 19 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="kota_2" type="Button" parent="map6" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 302.0
+margin_top = 186.0
+margin_right = 1114.0
+margin_bottom = 992.0
+rect_rotation = -0.910872
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 20 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
 
 [node name="map7" type="Control" parent="." index="6"]
 
@@ -197,7 +597,62 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map7" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 9 )
+texture = ExtResource( 21 )
+
+[node name="kota_3" type="Button" parent="map7" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 338.0
+margin_top = 94.0
+margin_right = 1150.0
+margin_bottom = 900.0
+rect_rotation = -0.910872
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 22 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="tambak7" type="Button" parent="map7" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 860.0
+margin_top = 270.0
+margin_right = 1672.0
+margin_bottom = 1076.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 23 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
 
 [node name="map8" type="Control" parent="." index="7"]
 
@@ -219,7 +674,61 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map8" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 10 )
+texture = ExtResource( 24 )
+
+[node name="tambak8" type="Button" parent="map8" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 280.0
+margin_top = 180.0
+margin_right = 1092.0
+margin_bottom = 986.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 25 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="dist_4" type="Button" parent="map8" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1000.0
+margin_top = 210.0
+margin_right = 1812.0
+margin_bottom = 1016.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 26 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
 
 [node name="map9" type="Control" parent="." index="8"]
 
@@ -241,7 +750,63 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="map9" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 11 )
+texture = ExtResource( 27 )
+
+[node name="kota_4" type="Button" parent="map9" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 434.0
+margin_top = 66.0
+margin_right = 1246.0
+margin_bottom = 872.0
+rect_rotation = -0.910872
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 22 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="supplier4" type="Button" parent="map9" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 154.0
+margin_top = 270.0
+margin_right = 966.0
+margin_bottom = 1076.0
+rect_rotation = -0.294351
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 28 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
 
 [node name="move" type="Control" parent="." index="9"]
 
@@ -299,7 +864,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -323,7 +888,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -347,7 +912,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -371,7 +936,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -396,7 +961,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -421,7 +986,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -445,7 +1010,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -470,7 +1035,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -495,7 +1060,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 12 )
+icon = ExtResource( 29 )
 flat = true
 align = 1
 
@@ -505,10 +1070,11 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 20.0
-margin_top = 390.0
-margin_right = 212.0
-margin_bottom = 576.0
+margin_left = 30.0
+margin_top = 440.0
+margin_right = 222.0
+margin_bottom = 626.0
+rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -520,7 +1086,70 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 13 )
+icon = ExtResource( 30 )
+flat = true
+align = 1
+
+[node name="monie" type="Sprite" parent="." index="11"]
+
+editor/display_folded = true
+position = Vector2( 1030, 80 )
+texture = ExtResource( 31 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="monie" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -10.0
+margin_top = -30.0
+margin_right = 30.0
+margin_bottom = -10.0
+rect_scale = Vector2( 5, 5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 5
+text = "10000"
+scroll_active = false
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_colors", "custom_fonts" ]
+
+[node name="rumah" type="Button" parent="." index="12"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.0
+margin_top = 300.0
+margin_right = 244.0
+margin_bottom = 514.0
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
 flat = true
 align = 1
 
@@ -543,5 +1172,7 @@ align = 1
 [connection signal="pressed" from="move/GridContainer/09" to="." method="_on_09_pressed"]
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+[connection signal="pressed" from="rumah" to="." method="_on_rumah_pressed"]
 
 

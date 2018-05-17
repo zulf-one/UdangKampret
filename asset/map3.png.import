@@ -7,10 +7,10 @@ path="res://.import/map3.png-c8b86e79f6f9bb831868d679d6811929.stex"
 [deps]
 
 source_file="res://asset/map3.png"
-source_md5="a7fc9cf238d77a4e623f52f110bca64d"
+source_md5="917459970b924f84fc96ef8b3ced624e"
 
 dest_files=[ "res://.import/map3.png-c8b86e79f6f9bb831868d679d6811929.stex" ]
-dest_md5="1928de3c87dff40822424bfcf899d41f"
+dest_md5="ef0e88bb29c7766d8d46cd624448b8cf"
 
 [params]
 
