@@ -1,20 +1,25 @@
-extends Node
+extends Control
 
+var monei = 12000
+var helm = 200
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
 
 func _ready():
-	
+	$monie/DeMon.set_text(str(monei))
 	pass
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
 #	pass
+func _warning():
+	
+	pass
 
 
-func _on_Button_pressed():
+func _on_Mov_pressed():
 	$Button.hide()
 	$move.show()
 	pass # replace with function body
@@ -51,6 +56,7 @@ func _on_01_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map1.show()
+	$Button.icon=load("res://asset/LOC1.png")
 	pass # replace with function body
 
 
@@ -58,6 +64,7 @@ func _on_02_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map2.show()
+	$Button.icon=load("res://asset/LOC2.png")
 	pass # replace with function body
 
 
@@ -65,6 +72,7 @@ func _on_03_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map3.show()
+	$Button.icon=load("res://asset/LOC3.png")
 	pass # replace with function body
 
 
@@ -72,6 +80,7 @@ func _on_04_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map4.show()
+	$Button.icon=load("res://asset/LOC4.png")
 	pass # replace with function body
 
 
@@ -79,6 +88,7 @@ func _on_05_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map5.show()
+	$Button.icon=load("res://asset/LOC5.png")
 	pass # replace with function body
 
 
@@ -86,6 +96,7 @@ func _on_06_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map6.show()
+	$Button.icon=load("res://asset/LOC6.png")
 	pass # replace with function body
 
 
@@ -93,6 +104,7 @@ func _on_07_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map7.show()
+	$Button.icon=load("res://asset/LOC7.png")
 	pass # replace with function body
 
 
@@ -100,6 +112,7 @@ func _on_08_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map8.show()
+	$Button.icon=load("res://asset/LOC8.png")
 	pass # replace with function body
 
 
@@ -107,6 +120,7 @@ func _on_09_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map9.show()
+	$Button.icon=load("res://asset/LOC9.png")
 	pass # replace with function body
 
 
@@ -183,4 +197,10 @@ func _on_supplier3_pressed():
 
 func _on_ext_pressed():
 	get_tree().change_scene("res://MainMenu.tscn")
+	pass # replace with function body
+
+
+func _on_Button2_pressed():
+	monei=monei-helm
+	$monie/DeMon.set_text(str(monei))
 	pass # replace with function body

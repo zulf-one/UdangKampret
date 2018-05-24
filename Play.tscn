@@ -29,7 +29,7 @@
 [ext_resource path="res://asset/map9.png" type="Texture" id=27]
 [ext_resource path="res://asset/objek/supplier4.png" type="Texture" id=28]
 [ext_resource path="res://asset/off.png" type="Texture" id=29]
-[ext_resource path="res://asset/LOC1.png" type="Texture" id=30]
+[ext_resource path="res://asset/LOC5.png" type="Texture" id=30]
 [ext_resource path="res://asset/Money.png" type="Texture" id=31]
 [ext_resource path="res://asset/home_tr.png" type="Texture" id=32]
 [ext_resource path="res://asset/ext.png" type="Texture" id=33]
@@ -46,13 +46,25 @@
 [ext_resource path="res://asset/popup/popup supp C.png" type="Texture" id=44]
 [ext_resource path="res://asset/popup/popup supp D.png" type="Texture" id=45]
 
-[node name="Play" type="Node" index="0"]
+[node name="Play" type="Control" index="0"]
 
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
 script = ExtResource( 1 )
+_sections_unfolded = [ "Theme" ]
 
 [node name="map1" type="Control" parent="." index="0"]
 
 editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -466,7 +478,6 @@ _sections_unfolded = [ "Rect" ]
 [node name="map5" type="Control" parent="." index="4"]
 
 editor/display_folded = true
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -841,6 +852,7 @@ size_flags_vertical = 1
 
 [node name="GridContainer" type="GridContainer" parent="move" index="0"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1106,41 +1118,33 @@ align = 1
 
 [node name="monie" type="Sprite" parent="." index="11"]
 
-editor/display_folded = true
 position = Vector2( 970, 60 )
 scale = Vector2( 0.608602, 0.62987 )
 texture = ExtResource( 31 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="monie" index="0"]
+[node name="DeMon" type="Label" parent="monie" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = -10.0
-margin_top = -30.0
-margin_right = 30.0
-margin_bottom = -10.0
-rect_scale = Vector2( 5, 5 )
+margin_left = -16.0
+margin_top = -32.0
+margin_right = 25.0
+margin_bottom = -16.0
+rect_scale = Vector2( 4, 4 )
 rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = true
-mouse_filter = 0
+rect_clip_content = false
+mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
-size_flags_vertical = 1
-custom_colors/default_color = Color( 0, 0, 0, 1 )
-bbcode_enabled = false
-bbcode_text = ""
-visible_characters = -1
-percent_visible = 1.0
-meta_underlined = true
-tab_size = 5
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "10000"
-scroll_active = false
-scroll_following = false
-selection_enabled = false
-override_selected_font_color = false
-_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_colors", "custom_fonts" ]
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors" ]
 
 [node name="rumah" type="Button" parent="." index="12"]
 
@@ -1745,6 +1749,31 @@ group = null
 flat = true
 align = 1
 
+[node name="Button2" type="Button" parent="." index="26"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 910.0
+margin_top = 100.0
+margin_right = 1060.0
+margin_bottom = 140.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Kurangi 200"
+flat = false
+align = 1
+
 [connection signal="pressed" from="map1/kota_1" to="." method="_on_kota_1_pressed"]
 
 [connection signal="pressed" from="map1/dist_1" to="." method="_on_dist_1_pressed"]
@@ -1787,7 +1816,7 @@ align = 1
 
 [connection signal="pressed" from="move/GridContainer/09" to="." method="_on_09_pressed"]
 
-[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_Mov_pressed"]
 
 [connection signal="pressed" from="rumah" to="." method="_on_rumah_pressed"]
 
@@ -1816,5 +1845,7 @@ align = 1
 [connection signal="pressed" from="pop_supp3/back" to="." method="_on_back_pressed"]
 
 [connection signal="pressed" from="pop_supp4/back" to="." method="_on_back_pressed"]
+
+[connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
 
 
