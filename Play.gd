@@ -2,12 +2,16 @@ extends Control
 
 var monei = 12000
 var helm = 200
+var amP = 0
+var amB = 0
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
 
 func _ready():
 	$monie/DeMon.set_text(str(monei))
+	$pop_usaha/Prod/AM_Produksi.set_text(str(amP))
+	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
 	pass
 
 #func _process(delta):
@@ -219,4 +223,24 @@ func _on_perusahaan_pressed():
 
 func _on_mulai_prod_pressed():
 	$pop_usaha/De_Mesin.play()
+	pass # replace with function body
+
+
+
+func _on_ok_prod_pressed():
+	amP = int($pop_usaha/Prod/AM_Produksi.get_text())
+	amB = float (amP*0.5/0.8)
+	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
+	$pop_usaha/Prod/AM_Produksi.set_editable(false)
+	pass # replace with function body
+
+
+func _on_reset_prod_pressed():
+	$pop_usaha/Prod/AM_Produksi.set_editable(true)
+	amP = 0
+	amB = 0
+	$pop_usaha/Prod/AM_Produksi.set_text(str(amP))
+	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
+	$pop_usaha/De_Mesin.stop()
+	$pop_usaha/De_Mesin.set_frame(0)
 	pass # replace with function body

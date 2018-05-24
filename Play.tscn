@@ -1812,8 +1812,6 @@ align = 1
 
 [node name="pop_usaha" type="Control" parent="." index="27"]
 
-editor/display_folded = true
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1834,14 +1832,13 @@ texture = ExtResource( 46 )
 
 [node name="De_Mesin" type="AnimatedSprite" parent="pop_usaha" index="1"]
 
-position = Vector2( 670, 340 )
-scale = Vector2( 1.02083, 0.74375 )
+position = Vector2( 764.464, 324.757 )
+scale = Vector2( 1.25699, 0.915809 )
 frames = SubResource( 1 )
 animation = "default"
 
 [node name="Prod" type="Sprite" parent="pop_usaha" index="2"]
 
-editor/display_folded = true
 position = Vector2( 220, 140 )
 texture = ExtResource( 65 )
 
@@ -1886,6 +1883,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 1
 size_flags_horizontal = 1
 size_flags_vertical = 1
+editable = false
 focus_mode = 2
 context_menu_enabled = true
 placeholder_alpha = 0.6
@@ -2149,6 +2147,10 @@ align = 1
 [connection signal="pressed" from="pop_supp4/back" to="." method="_on_back_pressed"]
 
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+
+[connection signal="pressed" from="pop_usaha/Prod/ok_prod" to="." method="_on_ok_prod_pressed"]
+
+[connection signal="pressed" from="pop_usaha/Prod/reset_prod" to="." method="_on_reset_prod_pressed"]
 
 [connection signal="pressed" from="pop_usaha/Prod/mulai_prod" to="." method="_on_mulai_prod_pressed"]
 
