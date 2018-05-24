@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tutor.png-0ad2d37e56ec459d37f7905abc154c46.stex"
+
+[deps]
+
+source_file="res://asset/halaman produksi/tutor.png"
+source_md5="0631ca8977297db72e657876d165331c"
+
+dest_files=[ "res://.import/tutor.png-0ad2d37e56ec459d37f7905abc154c46.stex" ]
+dest_md5="c38c2078b4e589b8c4e940b86a15249c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

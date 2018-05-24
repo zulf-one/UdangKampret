@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/machine factory10.png-ce3eea4cecd2fa42ac7ccaee03adf0bf.stex"
+
+[deps]
+
+source_file="res://asset/Mesin/machine factory10.png"
+source_md5="b297010fa941922adb0ab6e8de3b814a"
+
+dest_files=[ "res://.import/machine factory10.png-ce3eea4cecd2fa42ac7ccaee03adf0bf.stex" ]
+dest_md5="86c36762d6c55bac8fef85311fdb36cc"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

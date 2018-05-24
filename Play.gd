@@ -204,3 +204,19 @@ func _on_Button2_pressed():
 	monei=monei-helm
 	$monie/DeMon.set_text(str(monei))
 	pass # replace with function body
+
+
+func _on_jumppoutahere_pressed():
+	$pop_usaha/De_Mesin.stop()
+	$pop_usaha.hide()
+	pass # replace with function body
+
+
+func _on_perusahaan_pressed():
+	$pop_usaha.show()
+	pass # replace with function body
+
+
+func _on_mulai_prod_pressed():
+	$pop_usaha/De_Mesin.play()
+	pass # replace with function body

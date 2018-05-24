@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/2.stok bahan baku.png-ccc4788a20851c04b04e0190ba1757ae.stex"
+
+[deps]
+
+source_file="res://asset/halaman produksi/2.stok bahan baku.png"
+source_md5="c618ec782e9b125e61e39a34a76b49e4"
+
+dest_files=[ "res://.import/2.stok bahan baku.png-ccc4788a20851c04b04e0190ba1757ae.stex" ]
+dest_md5="c6fb2f13983038d429eba791c4112062"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

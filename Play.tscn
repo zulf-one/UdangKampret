@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://Play.gd" type="Script" id=1]
 [ext_resource path="res://asset/map1.png" type="Texture" id=2]
@@ -45,6 +45,40 @@
 [ext_resource path="res://asset/popup/popup supp B.png" type="Texture" id=43]
 [ext_resource path="res://asset/popup/popup supp C.png" type="Texture" id=44]
 [ext_resource path="res://asset/popup/popup supp D.png" type="Texture" id=45]
+[ext_resource path="res://asset/halaman produksi/background produksi.png" type="Texture" id=46]
+[ext_resource path="res://asset/Mesin/machine factory1.png" type="Texture" id=47]
+[ext_resource path="res://asset/Mesin/machine factory2.png" type="Texture" id=48]
+[ext_resource path="res://asset/Mesin/machine factory3.png" type="Texture" id=49]
+[ext_resource path="res://asset/Mesin/machine factory4.png" type="Texture" id=50]
+[ext_resource path="res://asset/Mesin/machine factory5.png" type="Texture" id=51]
+[ext_resource path="res://asset/Mesin/machine factory6.png" type="Texture" id=52]
+[ext_resource path="res://asset/Mesin/machine factory7.png" type="Texture" id=53]
+[ext_resource path="res://asset/Mesin/machine factory8.png" type="Texture" id=54]
+[ext_resource path="res://asset/Mesin/machine factory9.png" type="Texture" id=55]
+[ext_resource path="res://asset/Mesin/machine factory10.png" type="Texture" id=56]
+[ext_resource path="res://asset/Mesin/machine factory11.png" type="Texture" id=57]
+[ext_resource path="res://asset/Mesin/machine factory12.png" type="Texture" id=58]
+[ext_resource path="res://asset/Mesin/machine factory13.png" type="Texture" id=59]
+[ext_resource path="res://asset/Mesin/machine factory14.png" type="Texture" id=60]
+[ext_resource path="res://asset/Mesin/machine factory15.png" type="Texture" id=61]
+[ext_resource path="res://asset/Mesin/machine factory16.png" type="Texture" id=62]
+[ext_resource path="res://asset/Mesin/machine factory17.png" type="Texture" id=63]
+[ext_resource path="res://asset/Mesin/machine factory18.png" type="Texture" id=64]
+[ext_resource path="res://asset/halaman produksi/6. keterangan produksi.png" type="Texture" id=65]
+[ext_resource path="res://asset/halaman produksi/5.tombol ok.png" type="Texture" id=66]
+[ext_resource path="res://asset/halaman produksi/4.tombol mulai produksi.png" type="Texture" id=67]
+[ext_resource path="res://asset/halaman produksi/2.stok bahan baku.png" type="Texture" id=68]
+[ext_resource path="res://asset/halaman produksi/1.stok produk.png" type="Texture" id=69]
+[ext_resource path="res://asset/halaman produksi/3.grade.png" type="Texture" id=70]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
 
 [node name="Play" type="Control" index="0"]
 
@@ -1118,6 +1152,7 @@ align = 1
 
 [node name="monie" type="Sprite" parent="." index="11"]
 
+editor/display_folded = true
 position = Vector2( 970, 60 )
 scale = Vector2( 0.608602, 0.62987 )
 texture = ExtResource( 31 )
@@ -1751,6 +1786,7 @@ align = 1
 
 [node name="Button2" type="Button" parent="." index="26"]
 
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1774,6 +1810,270 @@ text = "Kurangi 200"
 flat = false
 align = 1
 
+[node name="pop_usaha" type="Control" parent="." index="27"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1280.0
+margin_bottom = 600.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bg" type="Sprite" parent="pop_usaha" index="0"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 46 )
+
+[node name="De_Mesin" type="AnimatedSprite" parent="pop_usaha" index="1"]
+
+position = Vector2( 670, 340 )
+scale = Vector2( 1.02083, 0.74375 )
+frames = SubResource( 1 )
+animation = "default"
+
+[node name="Prod" type="Sprite" parent="pop_usaha" index="2"]
+
+editor/display_folded = true
+position = Vector2( 220, 140 )
+texture = ExtResource( 65 )
+
+[node name="AM_Produksi" type="LineEdit" parent="pop_usaha/Prod" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = -42.0
+margin_right = 83.0
+margin_bottom = -18.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+
+[node name="AM_Bahan" type="LineEdit" parent="pop_usaha/Prod" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = -11.0
+margin_right = 83.0
+margin_bottom = 13.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+
+[node name="ok_prod" type="Button" parent="pop_usaha/Prod" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 117.0
+margin_top = -57.0
+margin_right = 175.0
+margin_bottom = -11.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 66 )
+flat = true
+align = 1
+
+[node name="reset_prod" type="Button" parent="pop_usaha/Prod" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 124.0
+margin_top = -8.0
+margin_right = 172.0
+margin_bottom = 22.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Reset"
+flat = false
+align = 1
+
+[node name="mulai_prod" type="Button" parent="pop_usaha/Prod" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -69.0
+margin_top = 29.0
+margin_right = 47.0
+margin_bottom = 87.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 67 )
+flat = true
+align = 1
+
+[node name="raw" type="Sprite" parent="pop_usaha" index="3"]
+
+editor/display_folded = true
+position = Vector2( 857.12, 36.0092 )
+texture = ExtResource( 68 )
+
+[node name="raw_num" type="Label" parent="pop_usaha/raw" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -86.0
+margin_top = -10.0
+margin_right = -38.0
+margin_bottom = 4.0
+rect_scale = Vector2( 2.5, 2.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "1000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="done" type="Sprite" parent="pop_usaha" index="4"]
+
+editor/display_folded = true
+position = Vector2( 1070.29, 38.4055 )
+texture = ExtResource( 69 )
+
+[node name="done_num" type="Label" parent="pop_usaha/done" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -98.0
+margin_top = -14.0
+margin_right = -46.0
+rect_scale = Vector2( 2.5, 2.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "1000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="grade" type="Sprite" parent="pop_usaha" index="5"]
+
+editor/display_folded = true
+position = Vector2( 1216.65, 38.5169 )
+texture = ExtResource( 70 )
+
+[node name="grade_num" type="Label" parent="pop_usaha/grade" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -19.0
+margin_top = -19.0
+margin_bottom = -5.0
+rect_scale = Vector2( 2.5, 2.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+text = "80"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="jumppoutahere" type="Button" parent="pop_usaha" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1091.0
+margin_top = 124.0
+margin_right = 1175.0
+margin_bottom = 451.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = true
+align = 1
+
 [connection signal="pressed" from="map1/kota_1" to="." method="_on_kota_1_pressed"]
 
 [connection signal="pressed" from="map1/dist_1" to="." method="_on_dist_1_pressed"]
@@ -1785,6 +2085,8 @@ align = 1
 [connection signal="pressed" from="map3/supplier1" to="." method="_on_supplier1_pressed"]
 
 [connection signal="pressed" from="map4/supplier3" to="." method="_on_supplier3_pressed"]
+
+[connection signal="pressed" from="map5/perusahaan" to="." method="_on_perusahaan_pressed"]
 
 [connection signal="pressed" from="map6/dist_3" to="." method="_on_dist_3_pressed"]
 
@@ -1847,5 +2149,9 @@ align = 1
 [connection signal="pressed" from="pop_supp4/back" to="." method="_on_back_pressed"]
 
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]
+
+[connection signal="pressed" from="pop_usaha/Prod/mulai_prod" to="." method="_on_mulai_prod_pressed"]
+
+[connection signal="pressed" from="pop_usaha/jumppoutahere" to="." method="_on_jumppoutahere_pressed"]
 
 
