@@ -4,6 +4,14 @@ var monei = 12000
 var helm = 200
 var amP = 0
 var amB = 0
+var BB = 1000
+var prod = 0
+var grad = 0
+var MintaA = 50 +((randi() % 10+1)*5)
+var MintaB = 40 +((randi() % 8+1)*5)
+var MintaC = 60 +((randi() % 12+1)*5)
+var MintaD = 60 +((randi() % 4+1)*5)
+var mango = 0
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
@@ -12,14 +20,18 @@ func _ready():
 	$monie/DeMon.set_text(str(monei))
 	$pop_usaha/Prod/AM_Produksi.set_text(str(amP))
 	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
+	$pop_usaha/raw/raw_num.set_text(str(BB))
+	$pop_usaha/done/done_num.set_text(str(prod))
+	$pop_usaha/grade/grade_num.set_text(str(grad))
 	pass
 
 #func _process(delta):
 #	# Called every frame. Delta is time since last frame.
 #	# Update game logic here.
 #	pass
-func _warning():
-	
+func _warning(tetx):
+	$WARN/warnLabel.set_text(str(tetx))
+	$WARN.show()
 	pass
 
 
@@ -28,6 +40,7 @@ func _on_Mov_pressed():
 	$move.show()
 	$warTot.hide()
 	$warTot.stop()
+	$rumah.hide()
 	pass # replace with function body
 
 func _fukkenhide():
@@ -41,6 +54,25 @@ func _fukkenhide():
 	$map7.hide()
 	$map8.hide()
 	$map9.hide()
+	pass
+func _dicsole():
+	mango = 0
+	$pop_dist1/L_dis_1.set_text("")
+	$pop_dist1/BB_dist_1.set_text("")
+	$pop_dist2/L_dis_2.set_text("")
+	$pop_dist2/BB_dist_2.set_text("")
+	$pop_dist3/L_dis_3.set_text("")
+	$pop_dist3/BB_dist_3.set_text("")
+	$pop_dist4/L_dis_4.set_text("")
+	$pop_dist4/BB_dist_4.set_text("")
+	$pop_supp1/BB_supp_1.set_text("")
+	$pop_supp1/TB_supp_1.set_text("")
+	$pop_supp2/BB_supp_2.set_text("")
+	$pop_supp2/TB_supp_2.set_text("")
+	$pop_supp3/BB_supp_3.set_text("")
+	$pop_supp3/TB_supp_3.set_text("")
+	$pop_supp4/BB_supp_4.set_text("")
+	$pop_supp4/TB_supp_4.set_text("")
 	pass
 
 func _popclose():
@@ -143,6 +175,7 @@ func _on_rumah_pressed():
 
 func _on_back_pressed():
 	_popclose()
+	_dicsole()
 	pass # replace with function body
 
 
@@ -164,11 +197,15 @@ func _on_dist_2_pressed():
 
 func _on_supplier2_pressed():
 	$pop_supp2.show()
+	$pop_supp2/BB_supp_2.set_text("")
+	$pop_supp2/TB_supp_2.set_text("")
 	pass # replace with function body
 
 
 func _on_supplier1_pressed():
 	$pop_supp1.show()
+	$pop_supp1/BB_supp_1.set_text("")
+	$pop_supp1/TB_supp_1.set_text("")
 	pass # replace with function body
 
 
@@ -199,11 +236,15 @@ func _on_kota_4_pressed():
 
 func _on_supplier4_pressed():
 	$pop_supp4.show()
+	$pop_supp4/BB_supp_4.set_text("")
+	$pop_supp4/TB_supp_4.set_text("")
 	pass # replace with function body
 
 
 func _on_supplier3_pressed():
 	$pop_supp3.show()
+	$pop_supp3/BB_supp_3.set_text("")
+	$pop_supp3/TB_supp_3.set_text("")
 	pass # replace with function body
 
 
@@ -226,6 +267,11 @@ func _on_jumppoutahere_pressed():
 
 func _on_perusahaan_pressed():
 	$pop_usaha.show()
+	$pop_usaha/Prod/AM_Produksi.set_text(str(amP))
+	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
+	$pop_usaha/raw/raw_num.set_text(str(BB))
+	$pop_usaha/done/done_num.set_text(str(prod))
+	$pop_usaha/grade/grade_num.set_text(str(grad))
 	pass # replace with function body
 
 
@@ -237,7 +283,9 @@ func _on_mulai_prod_pressed():
 
 func _on_ok_prod_pressed():
 	amP = int($pop_usaha/Prod/AM_Produksi.get_text())
-	amB = float (amP*0.5/0.8)
+	amB = int (float (amP*0.5/0.8)+1)
+	BB = BB-amB 
+	$pop_usaha/raw/raw_num.set_text(str(BB))
 	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
 	$pop_usaha/Prod/AM_Produksi.set_editable(false)
 	pass # replace with function body
@@ -274,4 +322,140 @@ func _on_Waktu_B_timeout():
 func _on_Waktu_W_timeout():
 	$Waktu_A.start()
 	$Waktu_B.start()
+	pass # replace with function body
+
+
+func _on_De_Mesin_animation_finished():
+	amP = amP-10
+	if amP > 0 :
+		prod = prod+10
+		$pop_usaha/done/done_num.set_text(str(prod))
+		$pop_usaha/Prod/AM_Produksi.set_text(str(amP))
+		$pop_usaha/De_Mesin.set_frame(0)
+		$pop_usaha/De_Mesin.play()
+	else :
+		amP = amP+10 
+		prod = prod+amP
+		amP = 0
+		$pop_usaha/done/done_num.set_text(str(prod))
+		$pop_usaha/Prod/AM_Produksi.set_text(str(amP))
+		_on_reset_prod_pressed()
+	pass # replace with function body
+
+
+func _on_Cacl_1_pressed():
+	mango = int ($pop_dist1/BB_dist_1.get_text()) * 13
+	$pop_dist1/L_dis_1.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Cacl_2_pressed():
+	mango = int ($pop_dist2/BB_dist_2.get_text()) * 12
+	$pop_dist2/L_dis_2.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Cacl_3_pressed():
+	mango = int ($pop_dist3/BB_dist_3.get_text()) * 11
+	$pop_dist3/L_dis_3.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Cacl_4_pressed():
+	mango = int ($pop_dist4/BB_dist_4.get_text()) * 12
+	$pop_dist4/L_dis_4.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Hitung_sup_1_pressed():
+	mango = int ($pop_supp1/BB_supp_1.get_text()) * 60
+	$pop_supp1/TB_supp_1.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Hitung_sup_2_pressed():
+	mango = int ($pop_supp2/BB_supp_2.get_text()) * 60
+	$pop_supp2/TB_supp_2.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Hitung_sup_3_pressed():
+	mango = int ($pop_supp3/BB_supp_3.get_text()) * 60
+	$pop_supp3/TB_supp_3.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_Hitung_sup_4_pressed():
+	mango = int ($pop_supp4/BB_supp_4.get_text()) * 60
+	$pop_supp4/TB_supp_4.set_text(str(mango))
+	mango = 0
+	pass # replace with function body
+
+
+func _on_buy_supp_1_pressed():
+	monei = monei - int($pop_supp1/TB_supp_1.get_text()) 
+	if monei > 0:
+		$monie/DeMon.set_text(str(monei))
+		BB = BB+ int($pop_supp1/BB_supp_1.get_text())
+		_on_back_pressed()
+		_warning("PEMBELIAN SUKSES")
+	else :
+		monei = monei + int($pop_supp1/TB_supp_1.get_text())
+		_on_back_pressed()
+		_warning("DUIT KURANG CUY")
+	pass # replace with function body
+
+
+func _on_allrite_pressed():
+	$WARN.hide()
+	_on_back_pressed()
+	pass # replace with function body
+
+
+func _on_buy_supp_2_pressed():
+	monei = monei - int($pop_supp2/TB_supp_2.get_text()) 
+	if monei > 0:
+		$monie/DeMon.set_text(str(monei))
+		BB = BB+ int($pop_supp2/BB_supp_2.get_text())
+		_on_back_pressed()
+		_warning("PEMBELIAN SUKSES")
+	else :
+		monei = monei + int($pop_supp2/TB_supp_2.get_text())
+		_on_back_pressed()
+		_warning("DUIT KURANG CUY")
+	pass # replace with function body
+
+
+func _on_buy_supp_3_pressed():
+	monei = monei - int($pop_supp3/TB_supp_3.get_text()) 
+	if monei > 0:
+		$monie/DeMon.set_text(str(monei))
+		BB = BB+ int($pop_supp3/BB_supp_3.get_text())
+		_on_back_pressed()
+		_warning("PEMBELIAN SUKSES")
+	else :
+		monei = monei + int($pop_supp3/TB_supp_3.get_text())
+		_on_back_pressed()
+		_warning("DUIT KURANG CUY")
+	pass # replace with function body
+
+
+func _on_buy_supp_4_pressed():
+	monei = monei - int($pop_supp4/TB_supp_4.get_text()) 
+	if monei > 0:
+		$monie/DeMon.set_text(str(monei))
+		BB = BB+ int($pop_supp4/BB_supp_4.get_text())
+		_on_back_pressed()
+		_warning("PEMBELIAN SUKSES")
+	else :
+		monei = monei + int($pop_supp4/TB_supp_4.get_text())
+		_on_back_pressed()
+		_warning("DUIT KURANG CUY")
 	pass # replace with function body

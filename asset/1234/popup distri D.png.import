@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/popup distri D.png-bd42a5b7427460a9a56098866096a219.stex"
+
+[deps]
+
+source_file="res://asset/1234/popup distri D.png"
+source_md5="842dbeb01507a18ebc3a5ef309d5e20b"
+
+dest_files=[ "res://.import/popup distri D.png-bd42a5b7427460a9a56098866096a219.stex" ]
+dest_md5="68e96d488c1a41db95cb5529d6bb900f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

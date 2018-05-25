@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/popup supp B.png-2c4c9e804daef75b48cb28396ec786cf.stex"
+
+[deps]
+
+source_file="res://asset/1234/popup supp B.png"
+source_md5="6c69cba23394588bc9371a2699a97662"
+
+dest_files=[ "res://.import/popup supp B.png-2c4c9e804daef75b48cb28396ec786cf.stex" ]
+dest_md5="9de625b1d04c9f493cf96f2d49105301"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

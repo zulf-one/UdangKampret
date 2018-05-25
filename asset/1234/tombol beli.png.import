@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tombol beli.png-0d4afb9ea95cd2c9e902981cf068943b.stex"
+
+[deps]
+
+source_file="res://asset/1234/tombol beli.png"
+source_md5="5550befb2f547e39762a6dfd7dba2e5c"
+
+dest_files=[ "res://.import/tombol beli.png-0d4afb9ea95cd2c9e902981cf068943b.stex" ]
+dest_md5="7bb4bd037002d8b4e3e46e102f4afead"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

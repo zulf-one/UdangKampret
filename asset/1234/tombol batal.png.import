@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/tombol batal.png-169608a333b76c10c48497a39821fb78.stex"
+
+[deps]
+
+source_file="res://asset/1234/tombol batal.png"
+source_md5="dca7cbe5e264fb71838bdcfb851a3c04"
+
+dest_files=[ "res://.import/tombol batal.png-169608a333b76c10c48497a39821fb78.stex" ]
+dest_md5="ee9a11b75cfee911e616b29a73cc9699"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
