@@ -26,6 +26,8 @@ func _warning():
 func _on_Mov_pressed():
 	$Button.hide()
 	$move.show()
+	$warTot.hide()
+	$warTot.stop()
 	pass # replace with function body
 
 func _fukkenhide():
@@ -61,6 +63,9 @@ func _on_01_pressed():
 	$Button.show()
 	$map1.show()
 	$Button.icon=load("res://asset/LOC1.png")
+	if $move/warTot2.is_playing():
+		$move/warTot2.hide()
+		$move/warTot2.stop()
 	pass # replace with function body
 
 
@@ -100,6 +105,9 @@ func _on_06_pressed():
 	_fukkenhide()
 	$Button.show()
 	$map6.show()
+	if $move/warTot3.is_playing():
+		$move/warTot3.hide()
+		$move/warTot3.stop()
 	$Button.icon=load("res://asset/LOC6.png")
 	pass # replace with function body
 
@@ -243,4 +251,27 @@ func _on_reset_prod_pressed():
 	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
 	$pop_usaha/De_Mesin.stop()
 	$pop_usaha/De_Mesin.set_frame(0)
+	pass # replace with function body
+
+
+
+func _on_Waktu_A_timeout():
+	$warTot.show()
+	$warTot.play()
+	$move/warTot2.show()
+	$move/warTot2.play()
+	pass # replace with function body
+
+
+func _on_Waktu_B_timeout():
+	$warTot.show()
+	$warTot.play()
+	$move/warTot3.show()
+	$move/warTot3.play()
+	pass # replace with function body
+
+
+func _on_Waktu_W_timeout():
+	$Waktu_A.start()
+	$Waktu_B.start()
 	pass # replace with function body
