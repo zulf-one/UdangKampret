@@ -45,5 +45,11 @@ func _on_bt_back2_pressed():
 
 
 func _on_bt_start_pressed():
+	$pg_default.hide()
+	$Name.show()
+	pass # replace with function body
+
+
+func _on_y_pressed():
 	get_tree().change_scene("res://Play.tscn")
 	pass # replace with function body

@@ -96,7 +96,7 @@ animations = [ {
 "speed": 1.04
 } ]
 
-[node name="Play" type="Control" index="0"]
+[node name="Play" type="Control"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -654,6 +654,7 @@ _sections_unfolded = [ "Rect" ]
 
 [node name="map7" type="Control" parent="." index="6"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -730,6 +731,7 @@ _sections_unfolded = [ "Rect" ]
 
 [node name="map8" type="Control" parent="." index="7"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -2589,6 +2591,7 @@ align = 1
 
 [node name="pop_supp4" type="Control" parent="." index="27"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
