@@ -53,3 +53,8 @@ func _on_bt_start_pressed():
 func _on_y_pressed():
 	get_tree().change_scene("res://Play.tscn")
 	pass # replace with function body
+
+
+func _on_N_pressed():
+	get_tree().change_scene("res://Faggot.tscn")
+	pass # replace with function body

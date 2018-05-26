@@ -12,6 +12,11 @@ var MintaB = 40 +((randi() % 8+1)*5)
 var MintaC = 60 +((randi() % 12+1)*5)
 var MintaD = 60 +((randi() % 4+1)*5)
 var mango = 0
+var Prd_A = [MintaA , MintaA , MintaA , MintaA]
+var Prd_B = [MintaB , MintaB , MintaB , MintaB]
+var Prd_C = [MintaC , MintaC , MintaC , MintaC]
+var Prd_D = [MintaD , MintaD , MintaD , MintaD]
+
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
@@ -34,6 +39,8 @@ func _warning(tetx):
 	$WARN.show()
 	pass
 
+func _warningPrediction():
+	pass
 
 func _on_Mov_pressed():
 	$Button.hide()
