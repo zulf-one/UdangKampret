@@ -61,6 +61,7 @@ func _fukkenhide():
 	$map7.hide()
 	$map8.hide()
 	$map9.hide()
+	$rumah.show()
 	pass
 func _dicsole():
 	mango = 0
@@ -80,6 +81,10 @@ func _dicsole():
 	$pop_supp3/TB_supp_3.set_text("")
 	$pop_supp4/BB_supp_4.set_text("")
 	$pop_supp4/TB_supp_4.set_text("")
+	$pop_supp1/buy_supp_1.set_disabled(true)
+	$pop_supp2/buy_supp_2.set_disabled(true)
+	$pop_supp3/buy_supp_3.set_disabled(true)
+	$pop_supp4/buy_supp_4.set_disabled(true)
 	pass
 
 func _popclose():
@@ -382,6 +387,7 @@ func _on_Hitung_sup_1_pressed():
 	mango = int ($pop_supp1/BB_supp_1.get_text()) * 60
 	$pop_supp1/TB_supp_1.set_text(str(mango))
 	mango = 0
+	$pop_supp1/buy_supp_1.set_disabled(false)
 	pass # replace with function body
 
 
@@ -389,6 +395,7 @@ func _on_Hitung_sup_2_pressed():
 	mango = int ($pop_supp2/BB_supp_2.get_text()) * 60
 	$pop_supp2/TB_supp_2.set_text(str(mango))
 	mango = 0
+	$pop_supp2/buy_supp_2.set_disabled(false)
 	pass # replace with function body
 
 
@@ -396,6 +403,7 @@ func _on_Hitung_sup_3_pressed():
 	mango = int ($pop_supp3/BB_supp_3.get_text()) * 60
 	$pop_supp3/TB_supp_3.set_text(str(mango))
 	mango = 0
+	$pop_supp3/buy_supp_3.set_disabled(false)
 	pass # replace with function body
 
 
@@ -403,6 +411,7 @@ func _on_Hitung_sup_4_pressed():
 	mango = int ($pop_supp4/BB_supp_4.get_text()) * 60
 	$pop_supp4/TB_supp_4.set_text(str(mango))
 	mango = 0
+	$pop_supp4/buy_supp_4.set_disabled(false)
 	pass # replace with function body
 
 

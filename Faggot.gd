@@ -14,6 +14,7 @@ var Prd_C
 var Prd_D
 
 func _ready():
+	randomize()
 	MintaA = 50 +(((randi()%10)+1)*5)
 	MintaB = 40 +(((randi()%8)+1)*5)
 	MintaC = 60 +(((randi()%12)+1)*5)
@@ -47,7 +48,7 @@ func _on_NEWA_pressed():
 	at=(3*Prd_A[0])-(3*Prd_A[1])+ Prd_A[2] 
 	bt=(((a/2)*(1-a)*(a*Prd_A[0])) - (2*a*Prd_A[1]) + (a*Prd_A[2]))
 	ct=(a*a/((1-2*a*a)*(Prd_A[0]-(2*Prd_A[1])+Prd_A[2])))
-	Prd_A[3]= at+bt+(ct/2)
+	Prd_A[3]= round(at+bt+(ct/2))
 	print (at)
 	print (bt)
 	print (ct)

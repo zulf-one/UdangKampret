@@ -96,7 +96,7 @@ animations = [ {
 "speed": 1.04
 } ]
 
-[node name="Play" type="Control"]
+[node name="Play" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -2168,6 +2168,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -2314,6 +2315,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -2581,6 +2583,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -2727,6 +2730,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -3049,6 +3053,7 @@ autostart = true
 
 [node name="WARN" type="Control" parent="." index="33"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
