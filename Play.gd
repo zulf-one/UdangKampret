@@ -4,9 +4,9 @@ var monei = 12000
 var helm = 200
 var amP = 0
 var amB = 0
-var BB = 1000
+var BB = 100
 var prod = 0
-var grad = 0
+var grad = 1
 var MintaA = 50 +((randi() % 10+1)*5)
 var MintaB = 40 +((randi() % 8+1)*5)
 var MintaC = 60 +((randi() % 12+1)*5)
@@ -272,7 +272,7 @@ func _on_Button2_pressed():
 
 
 func _on_jumppoutahere_pressed():
-	$pop_usaha/De_Mesin.stop()
+#	$pop_usaha/De_Mesin.stop()
 	$pop_usaha.hide()
 	pass # replace with function body
 
@@ -296,10 +296,13 @@ func _on_mulai_prod_pressed():
 func _on_ok_prod_pressed():
 	amP = int($pop_usaha/Prod/AM_Produksi.get_text())
 	amB = int (float (amP*0.5/0.8)+1)
+	if (BB-amB)<0 :
+		return
 	BB = BB-amB 
 	$pop_usaha/raw/raw_num.set_text(str(BB))
 	$pop_usaha/Prod/AM_Bahan.set_text(str(amB))
 	$pop_usaha/Prod/AM_Produksi.set_editable(false)
+	$pop_usaha/Prod/mulai_prod.set_disabled(false)
 	pass # replace with function body
 
 
@@ -474,4 +477,9 @@ func _on_buy_supp_4_pressed():
 		monei = monei + int($pop_supp4/TB_supp_4.get_text())
 		_on_back_pressed()
 		_warning("DUIT KURANG CUY")
+	pass # replace with function body
+
+
+func _on_Faster_pressed():
+	$pop_usaha/De_Mesin.get_sprite_frames().set_animation_speed("default",4)
 	pass # replace with function body

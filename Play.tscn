@@ -2179,7 +2179,6 @@ align = 1
 
 [node name="pop_supp2" type="Control" parent="." index="24"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -2767,7 +2766,6 @@ align = 1
 
 [node name="pop_usaha" type="Control" parent="." index="29"]
 
-editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -2916,6 +2914,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+disabled = true
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -3028,6 +3027,31 @@ enabled_focus_mode = 2
 shortcut = null
 group = null
 flat = true
+align = 1
+
+[node name="Faster" type="Button" parent="pop_usaha" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 312.0
+margin_top = 476.0
+margin_right = 400.0
+margin_bottom = 534.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "FASTER!"
+flat = false
 align = 1
 
 [node name="Waktu_A" type="Timer" parent="." index="30"]
@@ -3237,6 +3261,8 @@ _sections_unfolded = [ "Rect" ]
 [connection signal="pressed" from="pop_usaha/Prod/mulai_prod" to="." method="_on_mulai_prod_pressed"]
 
 [connection signal="pressed" from="pop_usaha/jumppoutahere" to="." method="_on_jumppoutahere_pressed"]
+
+[connection signal="pressed" from="pop_usaha/Faster" to="." method="_on_Faster_pressed"]
 
 [connection signal="timeout" from="Waktu_A" to="." method="_on_Waktu_A_timeout"]
 
