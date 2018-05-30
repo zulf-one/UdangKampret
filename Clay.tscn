@@ -1,0 +1,2857 @@
+[gd_scene load_steps=68 format=2]
+
+[ext_resource path="res://Clay.gd" type="Script" id=1]
+[ext_resource path="res://asset/mp_1.png" type="Texture" id=2]
+[ext_resource path="res://asset/objek/kota1.png" type="Texture" id=3]
+[ext_resource path="res://asset/objek/supplier1.png" type="Texture" id=4]
+[ext_resource path="res://asset/objek/distributor2.png" type="Texture" id=5]
+[ext_resource path="res://asset/objek/tambak1.png" type="Texture" id=6]
+[ext_resource path="res://asset/permintaan dan prediksi/prediksi A.png" type="Texture" id=7]
+[ext_resource path="res://asset/permintaan dan prediksi/akurasi A.png" type="Texture" id=8]
+[ext_resource path="res://asset/permintaan dan prediksi/permintaa A.png" type="Texture" id=9]
+[ext_resource path="res://asset/mp_2.png" type="Texture" id=10]
+[ext_resource path="res://asset/objek/kota2.png" type="Texture" id=11]
+[ext_resource path="res://asset/objek/supplier2.png" type="Texture" id=12]
+[ext_resource path="res://asset/objek/distributor3.png" type="Texture" id=13]
+[ext_resource path="res://asset/objek/tambak3.png" type="Texture" id=14]
+[ext_resource path="res://asset/mp_3.png" type="Texture" id=15]
+[ext_resource path="res://asset/objek/tambak6.png" type="Texture" id=16]
+[ext_resource path="res://asset/perusahaan/perusahaan1.png" type="Texture" id=17]
+[ext_resource path="res://asset/objek/supplier3.png" type="Texture" id=18]
+[ext_resource path="res://asset/mp_4.png" type="Texture" id=19]
+[ext_resource path="res://asset/objek/kota3.png" type="Texture" id=20]
+[ext_resource path="res://asset/objek/supplier4.png" type="Texture" id=21]
+[ext_resource path="res://asset/objek/distributor4.png" type="Texture" id=22]
+[ext_resource path="res://asset/objek/tambak7.png" type="Texture" id=23]
+[ext_resource path="res://asset/home_tr.png" type="Texture" id=24]
+[ext_resource path="res://asset/d3.png" type="Texture" id=25]
+[ext_resource path="res://asset/tombol keluar dan saldo/tombol berhenti.png" type="Texture" id=26]
+[ext_resource path="res://asset/tombol keluar dan saldo/info uang.png" type="Texture" id=27]
+[ext_resource path="res://asset/off.png" type="Texture" id=28]
+[ext_resource path="res://asset/1234/popup supp A.png" type="Texture" id=29]
+[ext_resource path="res://asset/1234/5.tombol ok.png" type="Texture" id=30]
+[ext_resource path="res://asset/1234/tombol beli.png" type="Texture" id=31]
+[ext_resource path="res://asset/1234/tombol batal.png" type="Texture" id=32]
+[ext_resource path="res://asset/1234/popup supp B.png" type="Texture" id=33]
+[ext_resource path="res://asset/1234/popup supp C.png" type="Texture" id=34]
+[ext_resource path="res://asset/1234/popup supplier D.png" type="Texture" id=35]
+[ext_resource path="res://asset/1234/popup distri A.png" type="Texture" id=36]
+[ext_resource path="res://asset/1234/tombol kirim.png" type="Texture" id=37]
+[ext_resource path="res://asset/1234/popup distri B.png" type="Texture" id=38]
+[ext_resource path="res://asset/1234/popup distri C.png" type="Texture" id=39]
+[ext_resource path="res://asset/halaman produksi/background produksi.png" type="Texture" id=40]
+[ext_resource path="res://asset/Mesin/machine factory1.png" type="Texture" id=41]
+[ext_resource path="res://asset/Mesin/machine factory2.png" type="Texture" id=42]
+[ext_resource path="res://asset/Mesin/machine factory3.png" type="Texture" id=43]
+[ext_resource path="res://asset/Mesin/machine factory4.png" type="Texture" id=44]
+[ext_resource path="res://asset/Mesin/machine factory5.png" type="Texture" id=45]
+[ext_resource path="res://asset/Mesin/machine factory6.png" type="Texture" id=46]
+[ext_resource path="res://asset/Mesin/machine factory7.png" type="Texture" id=47]
+[ext_resource path="res://asset/Mesin/machine factory8.png" type="Texture" id=48]
+[ext_resource path="res://asset/Mesin/machine factory9.png" type="Texture" id=49]
+[ext_resource path="res://asset/Mesin/machine factory10.png" type="Texture" id=50]
+[ext_resource path="res://asset/Mesin/machine factory11.png" type="Texture" id=51]
+[ext_resource path="res://asset/Mesin/machine factory12.png" type="Texture" id=52]
+[ext_resource path="res://asset/Mesin/machine factory13.png" type="Texture" id=53]
+[ext_resource path="res://asset/Mesin/machine factory14.png" type="Texture" id=54]
+[ext_resource path="res://asset/Mesin/machine factory15.png" type="Texture" id=55]
+[ext_resource path="res://asset/Mesin/machine factory16.png" type="Texture" id=56]
+[ext_resource path="res://asset/Mesin/machine factory17.png" type="Texture" id=57]
+[ext_resource path="res://asset/Mesin/machine factory18.png" type="Texture" id=58]
+[ext_resource path="res://asset/halaman produksi/6. keterangan produksi.png" type="Texture" id=59]
+[ext_resource path="res://asset/halaman produksi/5.tombol ok.png" type="Texture" id=60]
+[ext_resource path="res://asset/halaman produksi/4.tombol mulai produksi.png" type="Texture" id=61]
+[ext_resource path="res://asset/halaman produksi/2.stok bahan baku.png" type="Texture" id=62]
+[ext_resource path="res://asset/halaman produksi/1.stok produk.png" type="Texture" id=63]
+[ext_resource path="res://asset/halaman produksi/3.grade.png" type="Texture" id=64]
+[ext_resource path="res://asset/asd.png" type="Texture" id=65]
+[ext_resource path="res://asset/1234/pemeberitahuan.png" type="Texture" id=66]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ) ],
+"loop": false,
+"name": "default",
+"speed": 2.0
+} ]
+
+[node name="Clay" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+
+[node name="mp1" type="Control" parent="." index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bg" type="Sprite" parent="mp1" index="0"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 2 )
+
+[node name="KOTA_A" type="Button" parent="mp1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 210.0
+margin_top = 70.0
+margin_right = 1022.0
+margin_bottom = 876.0
+rect_scale = Vector2( 0.4, 0.4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 3 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="SUPP_A" type="Button" parent="mp1" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1110.0
+margin_top = 110.0
+margin_right = 1922.0
+margin_bottom = 916.0
+rect_scale = Vector2( 0.2, 0.2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 4 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="DIST_A" type="Button" parent="mp1" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 500.0
+margin_top = 390.0
+margin_right = 1312.0
+margin_bottom = 1196.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 5 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label" type="Label" parent="mp1" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 200.0
+margin_top = 330.0
+margin_right = 250.0
+margin_bottom = 344.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "KOTA A"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label2" type="Label" parent="mp1" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1130.0
+margin_top = 130.0
+margin_right = 1190.0
+margin_bottom = 144.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SUPPLIER"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label3" type="Label" parent="mp1" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 750.0
+margin_top = 520.0
+margin_right = 810.0
+margin_bottom = 534.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "DISTRBUTOR"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Sprite" type="Sprite" parent="mp1" index="7"]
+
+position = Vector2( 1030, 230 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 6 )
+
+[node name="PREDIS" type="Sprite" parent="mp1" index="8"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 499.273, 387.643 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 7 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp1/PREDIS" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -37.0
+margin_top = -9.0
+margin_right = -10.0
+margin_bottom = 5.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="PREDIS2" type="Sprite" parent="mp1" index="9"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 530.918, 406.981 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 8 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp1/PREDIS2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -32.0
+margin_top = 22.0
+margin_right = -5.0
+margin_bottom = 36.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="PREDIS3" type="Sprite" parent="mp1" index="10"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 526.158, 173.741 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 9 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp1/PREDIS3" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = -10.0
+margin_right = -13.0
+margin_bottom = 4.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="mp2" type="Control" parent="." index="1"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bg" type="Sprite" parent="mp2" index="0"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 10 )
+
+[node name="KOTA_B" type="Button" parent="mp2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 790.0
+margin_top = 120.0
+margin_right = 1602.0
+margin_bottom = 926.0
+rect_scale = Vector2( 0.4, 0.4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 11 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="SUPP_B" type="Button" parent="mp2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 230.0
+margin_top = 80.0
+margin_right = 1042.0
+margin_bottom = 886.0
+rect_scale = Vector2( 0.2, 0.2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 12 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="DIST_B" type="Button" parent="mp2" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 80.0
+margin_top = 320.0
+margin_right = 892.0
+margin_bottom = 1126.0
+rect_scale = Vector2( 0.25, 0.25 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 13 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label" type="Label" parent="mp2" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1040.0
+margin_top = 380.0
+margin_right = 1090.0
+margin_bottom = 394.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "KOTA B"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label2" type="Label" parent="mp2" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 240.0
+margin_top = 220.0
+margin_right = 300.0
+margin_bottom = 234.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SUPPLIER"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label3" type="Label" parent="mp2" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 290.0
+margin_top = 390.0
+margin_right = 372.0
+margin_bottom = 404.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "DISTRBUTOR"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Sprite" type="Sprite" parent="mp2" index="7"]
+
+position = Vector2( 470, 230 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 14 )
+
+[node name="mp3" type="Control" parent="." index="2"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bg" type="Sprite" parent="mp3" index="0"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 15 )
+
+[node name="sprite" type="Sprite" parent="mp3" index="1"]
+
+position = Vector2( 1020, 290 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 16 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="PERUSAHAAN" type="Button" parent="mp3" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 200.0
+margin_top = 280.0
+margin_right = 1102.0
+margin_bottom = 1086.0
+rect_scale = Vector2( 0.3, 0.3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 17 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="SUPP_D" type="Button" parent="mp3" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 810.0
+margin_top = 160.0
+margin_right = 1712.0
+margin_bottom = 966.0
+rect_scale = Vector2( 0.2, 0.2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 18 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label3" type="Label" parent="mp3" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 460.0
+margin_top = 440.0
+margin_right = 569.0
+margin_bottom = 454.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "PERUSAHAANMU"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label4" type="Label" parent="mp3" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 760.0
+margin_top = 300.0
+margin_right = 820.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SUPPLIER"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="mp4" type="Control" parent="." index="3"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bg" type="Sprite" parent="mp4" index="0"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 19 )
+
+[node name="KOTA_C" type="Button" parent="mp4" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 480.0
+margin_top = 60.0
+margin_right = 1292.0
+margin_bottom = 866.0
+rect_scale = Vector2( 0.4, 0.4 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 20 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="SUPP_C" type="Button" parent="mp4" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 980.0
+margin_top = 120.0
+margin_right = 1792.0
+margin_bottom = 926.0
+rect_scale = Vector2( 0.2, 0.2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 21 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="DIST_C" type="Button" parent="mp4" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 110.0
+margin_top = 150.0
+margin_right = 922.0
+margin_bottom = 956.0
+rect_scale = Vector2( 0.25, 0.25 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 22 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label" type="Label" parent="mp4" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 640.0
+margin_top = 50.0
+margin_right = 690.0
+margin_bottom = 64.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "KOTA C"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label2" type="Label" parent="mp4" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1020.0
+margin_top = 120.0
+margin_right = 1080.0
+margin_bottom = 134.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SUPPLIER"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label3" type="Label" parent="mp4" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 240.0
+margin_top = 290.0
+margin_right = 322.0
+margin_bottom = 304.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "DISTRBUTOR"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Sprite" type="Sprite" parent="mp4" index="7"]
+
+position = Vector2( 970, 330 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 23 )
+
+[node name="UI" type="Control" parent="." index="4"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="home" type="Button" parent="UI" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 280.0
+margin_right = 214.0
+margin_bottom = 494.0
+rect_scale = Vector2( 0.6, 0.6 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 24 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="nav" type="Button" parent="UI" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 10.0
+margin_top = 440.0
+margin_right = 142.0
+margin_bottom = 566.0
+rect_scale = Vector2( 0.8, 0.8 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 25 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ex" type="Button" parent="UI" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1170.0
+margin_top = 10.0
+margin_right = 1262.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 26 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="mon" type="Sprite" parent="UI" index="3"]
+
+editor/display_folded = true
+position = Vector2( 980, 50 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 27 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="monLab" type="Label" parent="UI/mon" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -100.0
+margin_top = -7.0
+margin_right = -27.0
+margin_bottom = 7.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="NAVIGATOR" type="Control" parent="." index="5"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="GridContainer" type="GridContainer" parent="NAVIGATOR" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 400.0
+margin_top = 90.0
+margin_right = 550.0
+margin_bottom = 240.0
+rect_scale = Vector2( 3, 3 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+columns = 2
+_sections_unfolded = [ "Rect" ]
+
+[node name="1" type="Button" parent="NAVIGATOR/GridContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 72.0
+margin_bottom = 66.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 28 )
+flat = true
+align = 1
+
+[node name="2" type="Button" parent="NAVIGATOR/GridContainer" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 76.0
+margin_right = 148.0
+margin_bottom = 66.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 28 )
+flat = true
+align = 1
+
+[node name="3" type="Button" parent="NAVIGATOR/GridContainer" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 70.0
+margin_right = 72.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 28 )
+flat = true
+align = 1
+
+[node name="4" type="Button" parent="NAVIGATOR/GridContainer" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 76.0
+margin_top = 70.0
+margin_right = 148.0
+margin_bottom = 136.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 28 )
+flat = true
+align = 1
+
+[node name="POP_SUP_1" type="Control" parent="." index="6"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_SUP_1" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 29 )
+
+[node name="calc_app_1" type="Button" parent="POP_SUP_1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_SUP_1" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="calc_res_1" type="Label" parent="POP_SUP_1" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_beli_1" type="Button" parent="POP_SUP_1" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 31 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_SUP_1" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="POP_SUP_2" type="Control" parent="." index="7"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_SUP_2" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 33 )
+
+[node name="calc_app_2" type="Button" parent="POP_SUP_2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_SUP_2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="calc_res_1" type="Label" parent="POP_SUP_2" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_beli_2" type="Button" parent="POP_SUP_2" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 31 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_SUP_2" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="POP_SUP_3" type="Control" parent="." index="8"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_SUP_3" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 34 )
+
+[node name="calc_app_3" type="Button" parent="POP_SUP_3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_SUP_3" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="calc_res_1" type="Label" parent="POP_SUP_3" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_beli_3" type="Button" parent="POP_SUP_3" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 31 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_SUP_3" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="POP_SUP_4" type="Control" parent="." index="9"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_SUP_4" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 35 )
+
+[node name="calc_app_4" type="Button" parent="POP_SUP_4" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_SUP_4" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="calc_res_1" type="Label" parent="POP_SUP_4" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_beli_4" type="Button" parent="POP_SUP_4" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 31 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_SUP_4" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="POP_DIST_1" type="Control" parent="." index="10"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_DIST_1" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 36 )
+
+[node name="cald_app_1" type="Button" parent="POP_DIST_1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_DIST_1" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="cald_res_1" type="Label" parent="POP_DIST_1" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_kirim_1" type="Button" parent="POP_DIST_1" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 37 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_DIST_1" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="POP_DIST_2" type="Control" parent="." index="11"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_DIST_2" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 38 )
+
+[node name="cald_app_2" type="Button" parent="POP_DIST_2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_DIST_2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="cald_res_1" type="Label" parent="POP_DIST_2" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_kirim_2" type="Button" parent="POP_DIST_2" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 37 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_DIST_2" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="POP_DIST_3" type="Control" parent="." index="12"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite" type="Sprite" parent="POP_DIST_3" index="0"]
+
+position = Vector2( 640, 260 )
+texture = ExtResource( 39 )
+
+[node name="cald_app_3" type="Button" parent="POP_DIST_3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 840.0
+margin_top = 230.0
+margin_right = 898.0
+margin_bottom = 276.0
+rect_scale = Vector2( 1.5, 1.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="ln_berat_1" type="LineEdit" parent="POP_DIST_3" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 240.0
+margin_right = 728.0
+margin_bottom = 264.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="cald_res_1" type="Label" parent="POP_DIST_3" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 670.0
+margin_top = 300.0
+margin_right = 725.0
+margin_bottom = 314.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_kirim_3" type="Button" parent="POP_DIST_3" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 470.0
+margin_top = 360.0
+margin_right = 660.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 37 )
+flat = true
+align = 1
+
+[node name="bt_batal" type="Button" parent="POP_DIST_3" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 650.0
+margin_top = 360.0
+margin_right = 840.0
+margin_bottom = 439.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 32 )
+flat = true
+align = 1
+
+[node name="PERUSAHAAN" type="Control" parent="." index="13"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="bt_batal" type="Button" parent="PERUSAHAAN" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1070.0
+margin_top = 130.0
+margin_right = 1230.0
+margin_bottom = 460.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+
+[node name="Sprite" type="Sprite" parent="PERUSAHAAN" index="1"]
+
+position = Vector2( 640, 300 )
+texture = ExtResource( 40 )
+
+[node name="factory" type="AnimatedSprite" parent="PERUSAHAAN" index="2"]
+
+position = Vector2( 725, 311.166 )
+scale = Vector2( 1.1375, 0.875 )
+frames = SubResource( 1 )
+animation = "default"
+
+[node name="ProductionLine" type="Sprite" parent="PERUSAHAAN" index="3"]
+
+editor/display_folded = true
+position = Vector2( 227.608, 124.735 )
+texture = ExtResource( 59 )
+
+[node name="LineProd" type="LineEdit" parent="PERUSAHAAN/ProductionLine" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = -42.0
+margin_right = 83.0
+margin_bottom = -18.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="LineBahan" type="LineEdit" parent="PERUSAHAAN/ProductionLine" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 13.0
+margin_top = -11.0
+margin_right = 82.0
+margin_bottom = 13.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 1
+size_flags_horizontal = 1
+size_flags_vertical = 1
+editable = false
+focus_mode = 2
+context_menu_enabled = true
+placeholder_alpha = 0.6
+caret_blink = false
+caret_blink_speed = 0.65
+caret_position = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="ok_prod" type="Button" parent="PERUSAHAAN/ProductionLine" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 122.0
+margin_top = -54.0
+margin_right = 180.0
+margin_bottom = -8.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 60 )
+flat = true
+align = 1
+
+[node name="mulai_prod" type="Button" parent="PERUSAHAAN/ProductionLine" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -83.0
+margin_top = 24.0
+margin_right = 33.0
+margin_bottom = 82.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 61 )
+flat = true
+align = 1
+
+[node name="reset_prod" type="Button" parent="PERUSAHAAN/ProductionLine" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 130.0
+margin_top = -7.0
+margin_right = 178.0
+margin_bottom = 23.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Reset"
+flat = false
+align = 1
+
+[node name="Stat" type="Sprite" parent="PERUSAHAAN" index="4"]
+
+editor/display_folded = true
+
+[node name="Sprite" type="Sprite" parent="PERUSAHAAN/Stat" index="0"]
+
+position = Vector2( 840.475, 33.0404 )
+texture = ExtResource( 62 )
+
+[node name="Sprite2" type="Sprite" parent="PERUSAHAAN/Stat" index="1"]
+
+position = Vector2( 1066.73, 34.4724 )
+texture = ExtResource( 63 )
+
+[node name="Sprite3" type="Sprite" parent="PERUSAHAAN/Stat" index="2"]
+
+position = Vector2( 1228.54, 35.9044 )
+texture = ExtResource( 64 )
+
+[node name="Label" type="Label" parent="PERUSAHAAN/Stat" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 768.0
+margin_top = 71.0
+margin_right = 842.0
+margin_bottom = 85.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Bahan Baku"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label2" type="Label" parent="PERUSAHAAN/Stat" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 984.0
+margin_top = 68.0
+margin_right = 1058.0
+margin_bottom = 82.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Produk Jadi"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label3" type="Label" parent="PERUSAHAAN/Stat" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1186.0
+margin_top = 73.0
+margin_right = 1224.0
+margin_bottom = 87.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Grade"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="BahanBaku" type="Label" parent="PERUSAHAAN/Stat" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 754.0
+margin_top = 24.0
+margin_right = 813.0
+margin_bottom = 38.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Produk" type="Label" parent="PERUSAHAAN/Stat" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 978.0
+margin_top = 22.0
+margin_right = 1037.0
+margin_bottom = 36.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Degrade" type="Label" parent="PERUSAHAAN/Stat" index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1203.0
+margin_top = 21.0
+margin_right = 1227.0
+margin_bottom = 35.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "000"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="upgrade" type="Sprite" parent="PERUSAHAAN" index="5"]
+
+editor/display_folded = true
+position = Vector2( 239.024, 460.336 )
+scale = Vector2( 5, 3 )
+texture = ExtResource( 64 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="PERUSAHAAN/upgrade" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = -33.0
+margin_right = 63.0
+margin_bottom = -19.0
+rect_scale = Vector2( 0.5, 1 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "UPGRADE"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label2" type="Label" parent="PERUSAHAAN/upgrade" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -32.0
+margin_top = -15.0
+margin_right = 11.0
+margin_bottom = -1.0
+rect_scale = Vector2( 0.5, 1 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SPEED"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="Label3" type="Label" parent="PERUSAHAAN/upgrade" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -32.0
+margin_top = 2.0
+margin_right = 29.0
+margin_bottom = 16.0
+rect_scale = Vector2( 0.5, 1 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "CAPACITY"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="SpeedUp" type="Button" parent="PERUSAHAAN/upgrade" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = -16.0
+margin_right = 43.0
+margin_bottom = 4.0
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Try"
+flat = false
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="CapaUp" type="Button" parent="PERUSAHAAN/upgrade" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 12.0
+margin_top = 5.0
+margin_right = 39.0
+margin_bottom = 25.0
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Try"
+flat = false
+align = 1
+_sections_unfolded = [ "Hint", "Margin", "Rect" ]
+
+[node name="WRN" type="Control" parent="." index="14"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Sprite2" type="Sprite" parent="WRN" index="0"]
+
+position = Vector2( 639.02, 297.764 )
+scale = Vector2( 2.36454, 1.84457 )
+texture = ExtResource( 65 )
+
+[node name="Sprite" type="Sprite" parent="WRN" index="1"]
+
+position = Vector2( 700.004, 284.481 )
+scale = Vector2( 1.45975, 1.45975 )
+texture = ExtResource( 66 )
+
+[node name="Label" type="Label" parent="WRN" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 505.0
+margin_top = 223.0
+margin_right = 682.0
+margin_bottom = 283.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "SAMPLETEXT"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="bt_batal" type="Button" parent="WRN" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 641.0
+margin_top = 356.0
+margin_right = 699.0
+margin_bottom = 402.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+icon = ExtResource( 30 )
+flat = true
+align = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="TRI_DELIVERY" type="Timer" parent="." index="15"]
+
+process_mode = 1
+wait_time = 4.0
+one_shot = true
+autostart = false
+
+[node name="SUPP_A_REFRESH" type="Timer" parent="." index="16"]
+
+process_mode = 1
+wait_time = 10.0
+one_shot = true
+autostart = false
+
+[node name="SUPP_B_REFRESH" type="Timer" parent="." index="17"]
+
+process_mode = 1
+wait_time = 10.0
+one_shot = true
+autostart = false
+
+[node name="SUPP_C_REFRESH" type="Timer" parent="." index="18"]
+
+process_mode = 1
+wait_time = 10.0
+one_shot = true
+autostart = false
+
+[node name="SUPP_D_REFRESH" type="Timer" parent="." index="19"]
+
+process_mode = 1
+wait_time = 10.0
+one_shot = true
+autostart = false
+
+[connection signal="pressed" from="mp1/SUPP_A" to="." method="_on_SUPP_A_pressed"]
+
+[connection signal="pressed" from="mp1/DIST_A" to="." method="_on_DIST_A_pressed"]
+
+[connection signal="pressed" from="mp2/SUPP_B" to="." method="_on_SUPP_B_pressed"]
+
+[connection signal="pressed" from="mp2/DIST_B" to="." method="_on_DIST_B_pressed"]
+
+[connection signal="pressed" from="mp3/PERUSAHAAN" to="." method="_on_PERUSAHAAN_pressed"]
+
+[connection signal="pressed" from="mp3/SUPP_D" to="." method="_on_SUPP_D_pressed"]
+
+[connection signal="pressed" from="mp4/SUPP_C" to="." method="_on_SUPP_C_pressed"]
+
+[connection signal="pressed" from="mp4/DIST_C" to="." method="_on_DIST_C_pressed"]
+
+[connection signal="pressed" from="UI/nav" to="." method="_on_nav_pressed"]
+
+[connection signal="pressed" from="UI/ex" to="." method="_on_ex_pressed"]
+
+[connection signal="pressed" from="NAVIGATOR/GridContainer/1" to="." method="_on_1_pressed"]
+
+[connection signal="pressed" from="NAVIGATOR/GridContainer/2" to="." method="_on_2_pressed"]
+
+[connection signal="pressed" from="NAVIGATOR/GridContainer/3" to="." method="_on_3_pressed"]
+
+[connection signal="pressed" from="NAVIGATOR/GridContainer/4" to="." method="_on_4_pressed"]
+
+[connection signal="pressed" from="POP_SUP_1/calc_app_1" to="." method="_on_calc_app_pressed"]
+
+[connection signal="pressed" from="POP_SUP_1/bt_beli_1" to="." method="_on_bt_beli_1_pressed"]
+
+[connection signal="pressed" from="POP_SUP_1/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="POP_SUP_2/calc_app_2" to="." method="_on_calc_app_2_pressed"]
+
+[connection signal="pressed" from="POP_SUP_2/bt_beli_2" to="." method="_on_bt_beli_2_pressed"]
+
+[connection signal="pressed" from="POP_SUP_2/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="POP_SUP_3/calc_app_3" to="." method="_on_calc_app_3_pressed"]
+
+[connection signal="pressed" from="POP_SUP_3/bt_beli_3" to="." method="_on_bt_beli_3_pressed"]
+
+[connection signal="pressed" from="POP_SUP_3/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="POP_SUP_4/calc_app_4" to="." method="_on_calc_app_4_pressed"]
+
+[connection signal="pressed" from="POP_SUP_4/bt_beli_4" to="." method="_on_bt_beli_4_pressed"]
+
+[connection signal="pressed" from="POP_SUP_4/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="POP_DIST_1/cald_app_1" to="." method="_on_cald_app_1_pressed"]
+
+[connection signal="pressed" from="POP_DIST_1/bt_kirim_1" to="." method="_on_bt_kirim_1_pressed"]
+
+[connection signal="pressed" from="POP_DIST_1/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="POP_DIST_2/cald_app_2" to="." method="_on_cald_app_2_pressed"]
+
+[connection signal="pressed" from="POP_DIST_2/bt_kirim_2" to="." method="_on_bt_kirim_2_pressed"]
+
+[connection signal="pressed" from="POP_DIST_2/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="POP_DIST_3/cald_app_3" to="." method="_on_cald_app_3_pressed"]
+
+[connection signal="pressed" from="POP_DIST_3/bt_kirim_3" to="." method="_on_bt_kirim_3_pressed"]
+
+[connection signal="pressed" from="POP_DIST_3/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="pressed" from="PERUSAHAAN/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="animation_finished" from="PERUSAHAAN/factory" to="." method="_on_factory_animation_finished"]
+
+[connection signal="pressed" from="PERUSAHAAN/ProductionLine/ok_prod" to="." method="_on_ok_prod_pressed"]
+
+[connection signal="pressed" from="PERUSAHAAN/ProductionLine/mulai_prod" to="." method="_on_mulai_prod_pressed"]
+
+[connection signal="pressed" from="PERUSAHAAN/ProductionLine/reset_prod" to="." method="_on_reset_prod_pressed"]
+
+[connection signal="pressed" from="PERUSAHAAN/upgrade/SpeedUp" to="." method="_on_SpeedUp_pressed"]
+
+[connection signal="pressed" from="PERUSAHAAN/upgrade/CapaUp" to="." method="_on_CapaUp_pressed"]
+
+[connection signal="pressed" from="WRN/bt_batal" to="." method="_on_bt_batal_pressed"]
+
+[connection signal="timeout" from="TRI_DELIVERY" to="." method="_on_TRI_DELIVERY_timeout"]
+
+

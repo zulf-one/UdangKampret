@@ -47,7 +47,7 @@ func _on_NEWA_pressed():
 	Prd_A[2]= a*Prd_A[1] + (1-a)*Prd_A[2]
 	at=(3*Prd_A[0])-(3*Prd_A[1])+ Prd_A[2] 
 	bt=(((a/2)*(1-a)*(a*Prd_A[0])) - (2*a*Prd_A[1]) + (a*Prd_A[2]))
-	ct=(a*a/((1-2*a*a)*(Prd_A[0]-(2*Prd_A[1])+Prd_A[2])))
+	ct=((a*a/((2*((1-a)*(1-a))))*(Prd_A[0]-(2*Prd_A[1])+Prd_A[2])) )
 	Prd_A[3]= round(at+bt+(ct/2))
 	print (at)
 	print (bt)

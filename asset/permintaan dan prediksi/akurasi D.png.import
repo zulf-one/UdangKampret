@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/distributor1.png-3a9b60857664fa8303cc587e4b1da988.stex"
+path="res://.import/akurasi D.png-bf6a7941bfc01d300429b576faa68631.stex"
 
 [deps]
 
-source_file="res://asset/objek/distributor1.png"
-source_md5="b53431d9042f8c3becfe47161dc3612a"
+source_file="res://asset/permintaan dan prediksi/akurasi D.png"
+source_md5="88b0004282a6c08832423b2fb101c471"
 
-dest_files=[ "res://.import/distributor1.png-3a9b60857664fa8303cc587e4b1da988.stex" ]
-dest_md5="c63ee2fe128f35c062f50c4012aa8820"
+dest_files=[ "res://.import/akurasi D.png-bf6a7941bfc01d300429b576faa68631.stex" ]
+dest_md5="e2c5f3674bb439f87acaeb34a21f883e"
 
 [params]
 

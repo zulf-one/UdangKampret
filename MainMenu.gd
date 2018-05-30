@@ -51,7 +51,7 @@ func _on_bt_start_pressed():
 
 
 func _on_y_pressed():
-	get_tree().change_scene("res://Play.tscn")
+	get_tree().change_scene("res://Clay.tscn")
 	pass # replace with function body
 
 

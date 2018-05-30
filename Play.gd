@@ -1,5 +1,6 @@
 extends Control
 
+
 var monei = 12000
 var helm = 200
 var amP = 0
