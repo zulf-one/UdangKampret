@@ -9,18 +9,31 @@ var grade = 1
 var useless = 0
 var rate = 10
 var sell = 0
+var lotto = 0
+var MintaA 
+var MintaB 
+var MintaC
+var MintaD
+var a = 0.2
+var at=0
+var bt=0
+var ct=0
+var Prd_A
+var Prd_B
+var Prd_C
+var Prd_D
 
 func _ready():
 	randomize()
 	$UI/mon/monLab.set_text(str(uang))
-	var MintaA = 50 +((randi() % 10+1)*5)
-	var MintaB = 40 +((randi() % 8+1)*5)
-	var MintaC = 60 +((randi() % 12+1)*5)
-	var MintaD = 60 +((randi() % 4+1)*5)
-	var Prd_A = [MintaA , MintaA , MintaA , MintaA]
-	var Prd_B = [MintaB , MintaB , MintaB , MintaB]
-	var Prd_C = [MintaC , MintaC , MintaC , MintaC]
-	var Prd_D = [MintaD , MintaD , MintaD , MintaD]
+	MintaA = 50 +((randi() % 10+1)*5)
+	MintaB = 40 +((randi() % 8+1)*5)
+	MintaC = 60 +((randi() % 12+1)*5)
+	MintaD = 60 +((randi() % 4+1)*5)
+	Prd_A = [MintaA , MintaA , MintaA , MintaA, MintaA]
+	Prd_B = [MintaB , MintaB , MintaB , MintaB, MintaB]
+	Prd_C = [MintaC , MintaC , MintaC , MintaC, MintaC]
+	Prd_D = [MintaD , MintaD , MintaD , MintaD, MintaD]
 	pass
 
 #func _process(delta):
@@ -55,6 +68,74 @@ func _deliver(x,y):
 			$PERUSAHAAN/Stat/Produk.set_text(str(Product))
 			$TRI_DELIVERY.start()
 			sell = y
+	pass
+
+func _clearWAr():
+	$WARNING_MAP/AnimatedSprite.stop()
+	$WARNING_MAP.hide()
+	$NAVIGATOR/war_1.stop()
+	$NAVIGATOR/war_1.hide()
+	$NAVIGATOR/war_2.stop()
+	$NAVIGATOR/war_2.hide()
+	$NAVIGATOR/war_3.stop()
+	$NAVIGATOR/war_3.hide()
+	pass
+
+func _clearSky():
+	$mp1/AKURA.hide()
+	$mp2/AKURA.hide()
+	$mp4/AKURA.hide()
+	$mp1/PREDIS.hide()
+	$mp2/PREDIS.hide()
+	$mp4/PREDIS.hide()
+	$mp1/REAL.hide()
+	$mp2/REAL.hide()
+	$mp4/REAL.hide()
+	pass
+
+func _newOrderA():
+	MintaA = 50 +((randi() % 10+1)*5)
+	Prd_A[0]= a*MintaA + (1-a)*Prd_A[0]
+	Prd_A[1]= a*Prd_A[0] + (1-a)*Prd_A[1]
+	Prd_A[2]= a*Prd_A[1] + (1-a)*Prd_A[2]
+	at=(3*Prd_A[0])-(3*Prd_A[1])+ Prd_A[2] 
+	bt=(((a/2)*(1-a)*(a*Prd_A[0])) - (2*a*Prd_A[1]) + (a*Prd_A[2]))
+	ct=((a*a/((2*((1-a)*(1-a))))*(Prd_A[0]-(2*Prd_A[1])+Prd_A[2])) )
+	Prd_A[3]= round(at+bt+(ct/2))
+	Prd_A[4]= abs((MintaA-Prd_A[3]))
+	$mp1/PREDIS/Label.set_text(str(Prd_A[3]))
+	$mp1/AKURA/Label.set_text(str(Prd_A[4]))
+	$mp1/REAL/Label.set_text(str(MintaA))
+	pass
+
+func _newOrderB():
+	MintaB = 40 +((randi() % 8+1)*5)
+	Prd_B[0]= a*MintaB + (1-a)*Prd_B[0]
+	Prd_B[1]= a*Prd_B[0] + (1-a)*Prd_B[1]
+	Prd_B[2]= a*Prd_B[1] + (1-a)*Prd_B[2]
+	at=(3*Prd_B[0])-(3*Prd_B[1])+ Prd_B[2] 
+	bt=(((a/2)*(1-a)*(a*Prd_B[0])) - (2*a*Prd_B[1]) + (a*Prd_B[2]))
+	ct=((a*a/((2*((1-a)*(1-a))))*(Prd_B[0]-(2*Prd_B[1])+Prd_B[2])) )
+	Prd_B[3]= round(at+bt+(ct/2))
+	Prd_B[4]= abs((MintaB-Prd_B[3]))
+	$mp2/PREDIS/Label.set_text(str(Prd_B[3]))
+	$mp2/AKURA/Label.set_text(str(Prd_B[4]))
+	$mp2/REAL/Label.set_text(str(MintaB))
+	pass
+
+func _newOrderC():
+	MintaC = 60 +((randi() % 12+1)*5)
+	Prd_C[0]= a*MintaC + (1-a)*Prd_C[0]
+	Prd_C[1]= a*Prd_C[0] + (1-a)*Prd_C[1]
+	Prd_C[2]= a*Prd_C[1] + (1-a)*Prd_C[2]
+	at=(3*Prd_C[0])-(3*Prd_C[1])+ Prd_C[2] 
+	bt=(((a/2)*(1-a)*(a*Prd_C[0])) - (2*a*Prd_C[1]) + (a*Prd_C[2]))
+	ct=((a*a/((2*((1-a)*(1-a))))*(Prd_C[0]-(2*Prd_C[1])+Prd_C[2])) )
+	Prd_C[3]= round(at+bt+(ct/2))
+	Prd_C[4]= abs((MintaC-Prd_C[3]))
+	$mp4/PREDIS/Label.set_text(str(Prd_C[3]))
+	$mp4/AKURA/Label.set_text(str(Prd_C[4]))
+	$mp4/REAL/Label.set_text(str(MintaC))
 	pass
 
 
@@ -354,4 +435,75 @@ func _on_bt_kirim_2_pressed():
 
 func _on_bt_kirim_3_pressed():
 	_deliver(int($POP_DIST_3/cald_res_1.get_text()),int($POP_DIST_3/ln_berat_1.get_text()))
+	pass # replace with function body
+
+
+func _on_SUPP_A_REFRESH_timeout():
+	pass # replace with function body
+
+
+func _on_SUPP_B_REFRESH_timeout():
+	pass # replace with function body
+
+
+func _on_SUPP_C_REFRESH_timeout():
+	pass # replace with function body
+
+
+func _on_SUPP_D_REFRESH_timeout():
+	pass # replace with function body
+
+
+func _on_KOTA_R_timeout():
+	lotto = randi() % 3
+	if lotto == 0 :
+		_newOrderA()
+		$WARNING_MAP.show()
+		$WARNING_MAP/AnimatedSprite.play()
+		$NAVIGATOR/war_1.show()
+		$NAVIGATOR/war_1.play()
+		$mp1/PREDIS.show()
+		$RESPONSE.start()
+	elif lotto == 1 :
+		_newOrderB()
+		$WARNING_MAP.show()
+		$WARNING_MAP/AnimatedSprite.play()
+		$NAVIGATOR/war_2.show()
+		$NAVIGATOR/war_2.play()
+		$mp2/PREDIS.show()
+		$RESPONSE.start()
+	else :
+		_newOrderC()
+		$WARNING_MAP.show()
+		$WARNING_MAP/AnimatedSprite.play()
+		$NAVIGATOR/war_3.show()
+		$NAVIGATOR/war_3.play()
+		$mp4/PREDIS.show()
+		$RESPONSE.start()
+	pass # replace with function body
+
+
+func _on_RESPONSE_timeout():
+	_clearWAr()
+	if lotto == 0 :
+		$mp1/PREDIS.hide()
+		$mp1/REAL.show()
+		$mp1/AKURA.show()
+		$RESET.start()
+	elif lotto == 1 :
+		$mp2/PREDIS.hide()
+		$mp2/REAL.show()
+		$mp2/AKURA.show()
+		$RESET.start()
+	else :
+		$mp4/PREDIS.hide()
+		$mp4/REAL.show()
+		$mp4/AKURA.show()
+		$RESET.start()
+	pass # replace with function body
+
+
+func _on_RESET_timeout():
+	_clearSky()
+	$KOTA_R.start()
 	pass # replace with function body

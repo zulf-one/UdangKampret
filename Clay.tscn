@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=78 format=2]
 
 [ext_resource path="res://Clay.gd" type="Script" id=1]
 [ext_resource path="res://asset/mp_1.png" type="Texture" id=2]
@@ -14,63 +14,89 @@
 [ext_resource path="res://asset/objek/supplier2.png" type="Texture" id=12]
 [ext_resource path="res://asset/objek/distributor3.png" type="Texture" id=13]
 [ext_resource path="res://asset/objek/tambak3.png" type="Texture" id=14]
-[ext_resource path="res://asset/mp_3.png" type="Texture" id=15]
-[ext_resource path="res://asset/objek/tambak6.png" type="Texture" id=16]
-[ext_resource path="res://asset/perusahaan/perusahaan1.png" type="Texture" id=17]
-[ext_resource path="res://asset/objek/supplier3.png" type="Texture" id=18]
-[ext_resource path="res://asset/mp_4.png" type="Texture" id=19]
-[ext_resource path="res://asset/objek/kota3.png" type="Texture" id=20]
-[ext_resource path="res://asset/objek/supplier4.png" type="Texture" id=21]
-[ext_resource path="res://asset/objek/distributor4.png" type="Texture" id=22]
-[ext_resource path="res://asset/objek/tambak7.png" type="Texture" id=23]
-[ext_resource path="res://asset/home_tr.png" type="Texture" id=24]
-[ext_resource path="res://asset/d3.png" type="Texture" id=25]
-[ext_resource path="res://asset/tombol keluar dan saldo/tombol berhenti.png" type="Texture" id=26]
-[ext_resource path="res://asset/tombol keluar dan saldo/info uang.png" type="Texture" id=27]
-[ext_resource path="res://asset/off.png" type="Texture" id=28]
-[ext_resource path="res://asset/1234/popup supp A.png" type="Texture" id=29]
-[ext_resource path="res://asset/1234/5.tombol ok.png" type="Texture" id=30]
-[ext_resource path="res://asset/1234/tombol beli.png" type="Texture" id=31]
-[ext_resource path="res://asset/1234/tombol batal.png" type="Texture" id=32]
-[ext_resource path="res://asset/1234/popup supp B.png" type="Texture" id=33]
-[ext_resource path="res://asset/1234/popup supp C.png" type="Texture" id=34]
-[ext_resource path="res://asset/1234/popup supplier D.png" type="Texture" id=35]
-[ext_resource path="res://asset/1234/popup distri A.png" type="Texture" id=36]
-[ext_resource path="res://asset/1234/tombol kirim.png" type="Texture" id=37]
-[ext_resource path="res://asset/1234/popup distri B.png" type="Texture" id=38]
-[ext_resource path="res://asset/1234/popup distri C.png" type="Texture" id=39]
-[ext_resource path="res://asset/halaman produksi/background produksi.png" type="Texture" id=40]
-[ext_resource path="res://asset/Mesin/machine factory1.png" type="Texture" id=41]
-[ext_resource path="res://asset/Mesin/machine factory2.png" type="Texture" id=42]
-[ext_resource path="res://asset/Mesin/machine factory3.png" type="Texture" id=43]
-[ext_resource path="res://asset/Mesin/machine factory4.png" type="Texture" id=44]
-[ext_resource path="res://asset/Mesin/machine factory5.png" type="Texture" id=45]
-[ext_resource path="res://asset/Mesin/machine factory6.png" type="Texture" id=46]
-[ext_resource path="res://asset/Mesin/machine factory7.png" type="Texture" id=47]
-[ext_resource path="res://asset/Mesin/machine factory8.png" type="Texture" id=48]
-[ext_resource path="res://asset/Mesin/machine factory9.png" type="Texture" id=49]
-[ext_resource path="res://asset/Mesin/machine factory10.png" type="Texture" id=50]
-[ext_resource path="res://asset/Mesin/machine factory11.png" type="Texture" id=51]
-[ext_resource path="res://asset/Mesin/machine factory12.png" type="Texture" id=52]
-[ext_resource path="res://asset/Mesin/machine factory13.png" type="Texture" id=53]
-[ext_resource path="res://asset/Mesin/machine factory14.png" type="Texture" id=54]
-[ext_resource path="res://asset/Mesin/machine factory15.png" type="Texture" id=55]
-[ext_resource path="res://asset/Mesin/machine factory16.png" type="Texture" id=56]
-[ext_resource path="res://asset/Mesin/machine factory17.png" type="Texture" id=57]
-[ext_resource path="res://asset/Mesin/machine factory18.png" type="Texture" id=58]
-[ext_resource path="res://asset/halaman produksi/6. keterangan produksi.png" type="Texture" id=59]
-[ext_resource path="res://asset/halaman produksi/5.tombol ok.png" type="Texture" id=60]
-[ext_resource path="res://asset/halaman produksi/4.tombol mulai produksi.png" type="Texture" id=61]
-[ext_resource path="res://asset/halaman produksi/2.stok bahan baku.png" type="Texture" id=62]
-[ext_resource path="res://asset/halaman produksi/1.stok produk.png" type="Texture" id=63]
-[ext_resource path="res://asset/halaman produksi/3.grade.png" type="Texture" id=64]
-[ext_resource path="res://asset/asd.png" type="Texture" id=65]
-[ext_resource path="res://asset/1234/pemeberitahuan.png" type="Texture" id=66]
+[ext_resource path="res://asset/permintaan dan prediksi/prediksi B.png" type="Texture" id=15]
+[ext_resource path="res://asset/permintaan dan prediksi/akurasi B.png" type="Texture" id=16]
+[ext_resource path="res://asset/permintaan dan prediksi/permintaan B.png" type="Texture" id=17]
+[ext_resource path="res://asset/mp_3.png" type="Texture" id=18]
+[ext_resource path="res://asset/objek/tambak6.png" type="Texture" id=19]
+[ext_resource path="res://asset/perusahaan/perusahaan1.png" type="Texture" id=20]
+[ext_resource path="res://asset/objek/supplier3.png" type="Texture" id=21]
+[ext_resource path="res://asset/mp_4.png" type="Texture" id=22]
+[ext_resource path="res://asset/objek/kota3.png" type="Texture" id=23]
+[ext_resource path="res://asset/objek/supplier4.png" type="Texture" id=24]
+[ext_resource path="res://asset/objek/distributor4.png" type="Texture" id=25]
+[ext_resource path="res://asset/objek/tambak7.png" type="Texture" id=26]
+[ext_resource path="res://asset/permintaan dan prediksi/prediksi C.png" type="Texture" id=27]
+[ext_resource path="res://asset/permintaan dan prediksi/akurasi C.png" type="Texture" id=28]
+[ext_resource path="res://asset/permintaan dan prediksi/permintaan C.png" type="Texture" id=29]
+[ext_resource path="res://asset/war1.png" type="Texture" id=30]
+[ext_resource path="res://asset/war2.png" type="Texture" id=31]
+[ext_resource path="res://asset/home_tr.png" type="Texture" id=32]
+[ext_resource path="res://asset/d3.png" type="Texture" id=33]
+[ext_resource path="res://asset/tombol keluar dan saldo/tombol berhenti.png" type="Texture" id=34]
+[ext_resource path="res://asset/tombol keluar dan saldo/info uang.png" type="Texture" id=35]
+[ext_resource path="res://asset/off.png" type="Texture" id=36]
+[ext_resource path="res://asset/1234/popup supp A.png" type="Texture" id=37]
+[ext_resource path="res://asset/1234/5.tombol ok.png" type="Texture" id=38]
+[ext_resource path="res://asset/1234/tombol beli.png" type="Texture" id=39]
+[ext_resource path="res://asset/1234/tombol batal.png" type="Texture" id=40]
+[ext_resource path="res://asset/1234/popup supp B.png" type="Texture" id=41]
+[ext_resource path="res://asset/1234/popup supp C.png" type="Texture" id=42]
+[ext_resource path="res://asset/1234/popup supplier D.png" type="Texture" id=43]
+[ext_resource path="res://asset/1234/popup distri A.png" type="Texture" id=44]
+[ext_resource path="res://asset/1234/tombol kirim.png" type="Texture" id=45]
+[ext_resource path="res://asset/1234/popup distri B.png" type="Texture" id=46]
+[ext_resource path="res://asset/1234/popup distri C.png" type="Texture" id=47]
+[ext_resource path="res://asset/halaman produksi/background produksi.png" type="Texture" id=48]
+[ext_resource path="res://asset/Mesin/machine factory1.png" type="Texture" id=49]
+[ext_resource path="res://asset/Mesin/machine factory2.png" type="Texture" id=50]
+[ext_resource path="res://asset/Mesin/machine factory3.png" type="Texture" id=51]
+[ext_resource path="res://asset/Mesin/machine factory4.png" type="Texture" id=52]
+[ext_resource path="res://asset/Mesin/machine factory5.png" type="Texture" id=53]
+[ext_resource path="res://asset/Mesin/machine factory6.png" type="Texture" id=54]
+[ext_resource path="res://asset/Mesin/machine factory7.png" type="Texture" id=55]
+[ext_resource path="res://asset/Mesin/machine factory8.png" type="Texture" id=56]
+[ext_resource path="res://asset/Mesin/machine factory9.png" type="Texture" id=57]
+[ext_resource path="res://asset/Mesin/machine factory10.png" type="Texture" id=58]
+[ext_resource path="res://asset/Mesin/machine factory11.png" type="Texture" id=59]
+[ext_resource path="res://asset/Mesin/machine factory12.png" type="Texture" id=60]
+[ext_resource path="res://asset/Mesin/machine factory13.png" type="Texture" id=61]
+[ext_resource path="res://asset/Mesin/machine factory14.png" type="Texture" id=62]
+[ext_resource path="res://asset/Mesin/machine factory15.png" type="Texture" id=63]
+[ext_resource path="res://asset/Mesin/machine factory16.png" type="Texture" id=64]
+[ext_resource path="res://asset/Mesin/machine factory17.png" type="Texture" id=65]
+[ext_resource path="res://asset/Mesin/machine factory18.png" type="Texture" id=66]
+[ext_resource path="res://asset/halaman produksi/6. keterangan produksi.png" type="Texture" id=67]
+[ext_resource path="res://asset/halaman produksi/5.tombol ok.png" type="Texture" id=68]
+[ext_resource path="res://asset/halaman produksi/4.tombol mulai produksi.png" type="Texture" id=69]
+[ext_resource path="res://asset/halaman produksi/2.stok bahan baku.png" type="Texture" id=70]
+[ext_resource path="res://asset/halaman produksi/1.stok produk.png" type="Texture" id=71]
+[ext_resource path="res://asset/halaman produksi/3.grade.png" type="Texture" id=72]
+[ext_resource path="res://asset/asd.png" type="Texture" id=73]
+[ext_resource path="res://asset/1234/pemeberitahuan.png" type="Texture" id=74]
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 4.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+
+animations = [ {
+"frames": [ ExtResource( 30 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
-"frames": [ ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ) ],
+"frames": [ ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ) ],
 "loop": false,
 "name": "default",
 "speed": 2.0
@@ -95,6 +121,7 @@ script = ExtResource( 1 )
 [node name="mp1" type="Control" parent="." index="0"]
 
 editor/display_folded = true
+visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -305,7 +332,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors" ]
 
-[node name="PREDIS2" type="Sprite" parent="mp1" index="9"]
+[node name="AKURA" type="Sprite" parent="mp1" index="9"]
 
 editor/display_folded = true
 visible = false
@@ -314,7 +341,7 @@ scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 8 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Label" type="Label" parent="mp1/PREDIS2" index="0"]
+[node name="Label" type="Label" parent="mp1/AKURA" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -338,7 +365,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors" ]
 
-[node name="PREDIS3" type="Sprite" parent="mp1" index="10"]
+[node name="REAL" type="Sprite" parent="mp1" index="10"]
 
 editor/display_folded = true
 visible = false
@@ -347,7 +374,7 @@ scale = Vector2( 0.8, 0.8 )
 texture = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Label" type="Label" parent="mp1/PREDIS3" index="0"]
+[node name="Label" type="Label" parent="mp1/REAL" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -552,10 +579,108 @@ position = Vector2( 470, 230 )
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 14 )
 
-[node name="mp3" type="Control" parent="." index="2"]
+[node name="PREDIS" type="Sprite" parent="mp2" index="8"]
 
 editor/display_folded = true
 visible = false
+position = Vector2( 380.957, 491.327 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp2/PREDIS" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -33.0
+margin_top = 56.0
+margin_right = -6.0
+margin_bottom = 70.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="AKURA" type="Sprite" parent="mp2" index="9"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 375.118, 510.531 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 16 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp2/AKURA" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -28.0
+margin_top = 47.0
+margin_right = -1.0
+margin_bottom = 61.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="REAL" type="Sprite" parent="mp2" index="10"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 1095.78, 242.306 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 17 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp2/REAL" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -41.0
+margin_top = -6.0
+margin_right = -14.0
+margin_bottom = 8.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="mp3" type="Control" parent="." index="2"]
+
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -572,13 +697,13 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="mp3" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 15 )
+texture = ExtResource( 18 )
 
 [node name="sprite" type="Sprite" parent="mp3" index="1"]
 
 position = Vector2( 1020, 290 )
 scale = Vector2( 0.2, 0.2 )
-texture = ExtResource( 16 )
+texture = ExtResource( 19 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="PERUSAHAAN" type="Button" parent="mp3" index="2"]
@@ -603,7 +728,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 17 )
+icon = ExtResource( 20 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -630,7 +755,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 18 )
+icon = ExtResource( 21 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -703,7 +828,7 @@ size_flags_vertical = 1
 [node name="bg" type="Sprite" parent="mp4" index="0"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 19 )
+texture = ExtResource( 22 )
 
 [node name="KOTA_C" type="Button" parent="mp4" index="1"]
 
@@ -727,7 +852,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 20 )
+icon = ExtResource( 23 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -754,7 +879,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 21 )
+icon = ExtResource( 24 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -781,7 +906,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 22 )
+icon = ExtResource( 25 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -862,9 +987,132 @@ _sections_unfolded = [ "Rect", "custom_colors" ]
 
 position = Vector2( 970, 330 )
 scale = Vector2( 0.2, 0.2 )
-texture = ExtResource( 23 )
+texture = ExtResource( 26 )
 
-[node name="UI" type="Control" parent="." index="4"]
+[node name="PREDIS" type="Sprite" parent="mp4" index="8"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 183.345, 120.446 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 27 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp4/PREDIS" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -32.0
+margin_top = -5.0
+margin_right = -5.0
+margin_bottom = 9.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="AKURA" type="Sprite" parent="mp4" index="9"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 147.75, 97.8997 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 28 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp4/AKURA" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -31.0
+margin_top = 13.0
+margin_right = -4.0
+margin_bottom = 27.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="REAL" type="Sprite" parent="mp4" index="10"]
+
+editor/display_folded = true
+visible = false
+position = Vector2( 815.778, 215.991 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 29 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Label" type="Label" parent="mp4/REAL" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -41.0
+margin_top = -6.0
+margin_right = -14.0
+margin_bottom = 8.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "XXX"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "custom_colors" ]
+
+[node name="WARNING_MAP" type="Control" parent="." index="4"]
+
+editor/display_folded = true
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="WARNING_MAP" index="0"]
+
+position = Vector2( 58.2786, 487.814 )
+frames = SubResource( 2 )
+animation = "default"
+frame = 1
+
+[node name="UI" type="Control" parent="." index="5"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -901,7 +1149,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 24 )
+icon = ExtResource( 32 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -928,7 +1176,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 25 )
+icon = ExtResource( 33 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -954,7 +1202,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 26 )
+icon = ExtResource( 34 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -964,7 +1212,7 @@ _sections_unfolded = [ "Rect" ]
 editor/display_folded = true
 position = Vector2( 980, 50 )
 scale = Vector2( 1.5, 1.5 )
-texture = ExtResource( 27 )
+texture = ExtResource( 35 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="monLab" type="Label" parent="UI/mon" index="0"]
@@ -991,7 +1239,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_colors" ]
 
-[node name="NAVIGATOR" type="Control" parent="." index="5"]
+[node name="NAVIGATOR" type="Control" parent="." index="6"]
 
 editor/display_folded = true
 visible = false
@@ -1048,7 +1296,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 28 )
+icon = ExtResource( 36 )
 flat = true
 align = 1
 
@@ -1072,7 +1320,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 28 )
+icon = ExtResource( 36 )
 flat = true
 align = 1
 
@@ -1096,7 +1344,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 28 )
+icon = ExtResource( 36 )
 flat = true
 align = 1
 
@@ -1121,11 +1369,32 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 28 )
+icon = ExtResource( 36 )
 flat = true
 align = 1
 
-[node name="POP_SUP_1" type="Control" parent="." index="6"]
+[node name="war_1" type="AnimatedSprite" parent="NAVIGATOR" index="1"]
+
+visible = false
+position = Vector2( 502.247, 188.941 )
+frames = SubResource( 3 )
+animation = "default"
+
+[node name="war_2" type="AnimatedSprite" parent="NAVIGATOR" index="2"]
+
+visible = false
+position = Vector2( 731.846, 193.724 )
+frames = SubResource( 3 )
+animation = "default"
+
+[node name="war_3" type="AnimatedSprite" parent="NAVIGATOR" index="3"]
+
+visible = false
+position = Vector2( 734.238, 404.189 )
+frames = SubResource( 3 )
+animation = "default"
+
+[node name="POP_SUP_1" type="Control" parent="." index="7"]
 
 editor/display_folded = true
 visible = false
@@ -1145,7 +1414,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_SUP_1" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 29 )
+texture = ExtResource( 37 )
 
 [node name="calc_app_1" type="Button" parent="POP_SUP_1" index="1"]
 
@@ -1169,7 +1438,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -1245,7 +1514,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 31 )
+icon = ExtResource( 39 )
 flat = true
 align = 1
 
@@ -1270,11 +1539,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="POP_SUP_2" type="Control" parent="." index="7"]
+[node name="POP_SUP_2" type="Control" parent="." index="8"]
 
 editor/display_folded = true
 visible = false
@@ -1294,7 +1563,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_SUP_2" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 33 )
+texture = ExtResource( 41 )
 
 [node name="calc_app_2" type="Button" parent="POP_SUP_2" index="1"]
 
@@ -1318,7 +1587,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -1394,7 +1663,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 31 )
+icon = ExtResource( 39 )
 flat = true
 align = 1
 
@@ -1419,11 +1688,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="POP_SUP_3" type="Control" parent="." index="8"]
+[node name="POP_SUP_3" type="Control" parent="." index="9"]
 
 editor/display_folded = true
 visible = false
@@ -1443,7 +1712,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_SUP_3" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 34 )
+texture = ExtResource( 42 )
 
 [node name="calc_app_3" type="Button" parent="POP_SUP_3" index="1"]
 
@@ -1467,7 +1736,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -1543,7 +1812,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 31 )
+icon = ExtResource( 39 )
 flat = true
 align = 1
 
@@ -1568,11 +1837,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="POP_SUP_4" type="Control" parent="." index="9"]
+[node name="POP_SUP_4" type="Control" parent="." index="10"]
 
 editor/display_folded = true
 visible = false
@@ -1592,7 +1861,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_SUP_4" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 35 )
+texture = ExtResource( 43 )
 
 [node name="calc_app_4" type="Button" parent="POP_SUP_4" index="1"]
 
@@ -1616,7 +1885,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -1692,7 +1961,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 31 )
+icon = ExtResource( 39 )
 flat = true
 align = 1
 
@@ -1717,11 +1986,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="POP_DIST_1" type="Control" parent="." index="10"]
+[node name="POP_DIST_1" type="Control" parent="." index="11"]
 
 editor/display_folded = true
 visible = false
@@ -1741,7 +2010,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_DIST_1" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 36 )
+texture = ExtResource( 44 )
 
 [node name="cald_app_1" type="Button" parent="POP_DIST_1" index="1"]
 
@@ -1765,7 +2034,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -1841,7 +2110,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 37 )
+icon = ExtResource( 45 )
 flat = true
 align = 1
 
@@ -1866,11 +2135,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="POP_DIST_2" type="Control" parent="." index="11"]
+[node name="POP_DIST_2" type="Control" parent="." index="12"]
 
 editor/display_folded = true
 visible = false
@@ -1890,7 +2159,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_DIST_2" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 38 )
+texture = ExtResource( 46 )
 
 [node name="cald_app_2" type="Button" parent="POP_DIST_2" index="1"]
 
@@ -1914,7 +2183,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -1990,7 +2259,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 37 )
+icon = ExtResource( 45 )
 flat = true
 align = 1
 
@@ -2015,12 +2284,13 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="POP_DIST_3" type="Control" parent="." index="12"]
+[node name="POP_DIST_3" type="Control" parent="." index="13"]
 
+editor/display_folded = true
 visible = false
 anchor_left = 0.0
 anchor_top = 0.0
@@ -2038,7 +2308,7 @@ size_flags_vertical = 1
 [node name="Sprite" type="Sprite" parent="POP_DIST_3" index="0"]
 
 position = Vector2( 640, 260 )
-texture = ExtResource( 39 )
+texture = ExtResource( 47 )
 
 [node name="cald_app_3" type="Button" parent="POP_DIST_3" index="1"]
 
@@ -2062,7 +2332,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
@@ -2138,7 +2408,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 37 )
+icon = ExtResource( 45 )
 flat = true
 align = 1
 
@@ -2163,11 +2433,11 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 32 )
+icon = ExtResource( 40 )
 flat = true
 align = 1
 
-[node name="PERUSAHAAN" type="Control" parent="." index="13"]
+[node name="PERUSAHAAN" type="Control" parent="." index="14"]
 
 editor/display_folded = true
 visible = false
@@ -2211,7 +2481,7 @@ align = 1
 [node name="Sprite" type="Sprite" parent="PERUSAHAAN" index="1"]
 
 position = Vector2( 640, 300 )
-texture = ExtResource( 40 )
+texture = ExtResource( 48 )
 
 [node name="factory" type="AnimatedSprite" parent="PERUSAHAAN" index="2"]
 
@@ -2224,7 +2494,7 @@ animation = "default"
 
 editor/display_folded = true
 position = Vector2( 227.608, 124.735 )
-texture = ExtResource( 59 )
+texture = ExtResource( 67 )
 
 [node name="LineProd" type="LineEdit" parent="PERUSAHAAN/ProductionLine" index="0"]
 
@@ -2298,7 +2568,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 60 )
+icon = ExtResource( 68 )
 flat = true
 align = 1
 
@@ -2324,7 +2594,7 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 61 )
+icon = ExtResource( 69 )
 flat = true
 align = 1
 
@@ -2360,17 +2630,17 @@ editor/display_folded = true
 [node name="Sprite" type="Sprite" parent="PERUSAHAAN/Stat" index="0"]
 
 position = Vector2( 840.475, 33.0404 )
-texture = ExtResource( 62 )
+texture = ExtResource( 70 )
 
 [node name="Sprite2" type="Sprite" parent="PERUSAHAAN/Stat" index="1"]
 
 position = Vector2( 1066.73, 34.4724 )
-texture = ExtResource( 63 )
+texture = ExtResource( 71 )
 
 [node name="Sprite3" type="Sprite" parent="PERUSAHAAN/Stat" index="2"]
 
 position = Vector2( 1228.54, 35.9044 )
-texture = ExtResource( 64 )
+texture = ExtResource( 72 )
 
 [node name="Label" type="Label" parent="PERUSAHAAN/Stat" index="3"]
 
@@ -2521,7 +2791,7 @@ _sections_unfolded = [ "Rect", "custom_colors" ]
 editor/display_folded = true
 position = Vector2( 239.024, 460.336 )
 scale = Vector2( 5, 3 )
-texture = ExtResource( 64 )
+texture = ExtResource( 72 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Label" type="Label" parent="PERUSAHAAN/upgrade" index="0"]
@@ -2650,7 +2920,7 @@ flat = false
 align = 1
 _sections_unfolded = [ "Hint", "Margin", "Rect" ]
 
-[node name="WRN" type="Control" parent="." index="14"]
+[node name="WRN" type="Control" parent="." index="15"]
 
 editor/display_folded = true
 visible = false
@@ -2671,13 +2941,13 @@ size_flags_vertical = 1
 
 position = Vector2( 639.02, 297.764 )
 scale = Vector2( 2.36454, 1.84457 )
-texture = ExtResource( 65 )
+texture = ExtResource( 73 )
 
 [node name="Sprite" type="Sprite" parent="WRN" index="1"]
 
 position = Vector2( 700.004, 284.481 )
 scale = Vector2( 1.45975, 1.45975 )
-texture = ExtResource( 66 )
+texture = ExtResource( 74 )
 
 [node name="Label" type="Label" parent="WRN" index="2"]
 
@@ -2726,43 +2996,64 @@ toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
 group = null
-icon = ExtResource( 30 )
+icon = ExtResource( 38 )
 flat = true
 align = 1
 _sections_unfolded = [ "Rect" ]
 
-[node name="TRI_DELIVERY" type="Timer" parent="." index="15"]
+[node name="TRI_DELIVERY" type="Timer" parent="." index="16"]
 
 process_mode = 1
 wait_time = 4.0
 one_shot = true
 autostart = false
 
-[node name="SUPP_A_REFRESH" type="Timer" parent="." index="16"]
+[node name="SUPP_A_REFRESH" type="Timer" parent="." index="17"]
 
 process_mode = 1
 wait_time = 10.0
 one_shot = true
 autostart = false
 
-[node name="SUPP_B_REFRESH" type="Timer" parent="." index="17"]
+[node name="SUPP_B_REFRESH" type="Timer" parent="." index="18"]
 
 process_mode = 1
 wait_time = 10.0
 one_shot = true
 autostart = false
 
-[node name="SUPP_C_REFRESH" type="Timer" parent="." index="18"]
+[node name="SUPP_C_REFRESH" type="Timer" parent="." index="19"]
 
 process_mode = 1
 wait_time = 10.0
 one_shot = true
 autostart = false
 
-[node name="SUPP_D_REFRESH" type="Timer" parent="." index="19"]
+[node name="SUPP_D_REFRESH" type="Timer" parent="." index="20"]
 
 process_mode = 1
 wait_time = 10.0
+one_shot = true
+autostart = false
+
+[node name="KOTA_R" type="Timer" parent="." index="21"]
+
+process_mode = 1
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="RESPONSE" type="Timer" parent="." index="22"]
+
+process_mode = 1
+wait_time = 5.0
+one_shot = true
+autostart = false
+
+[node name="RESET" type="Timer" parent="." index="23"]
+
+process_mode = 1
+wait_time = 4.0
 one_shot = true
 autostart = false
 
@@ -2853,5 +3144,19 @@ autostart = false
 [connection signal="pressed" from="WRN/bt_batal" to="." method="_on_bt_batal_pressed"]
 
 [connection signal="timeout" from="TRI_DELIVERY" to="." method="_on_TRI_DELIVERY_timeout"]
+
+[connection signal="timeout" from="SUPP_A_REFRESH" to="." method="_on_SUPP_A_REFRESH_timeout"]
+
+[connection signal="timeout" from="SUPP_B_REFRESH" to="." method="_on_SUPP_B_REFRESH_timeout"]
+
+[connection signal="timeout" from="SUPP_C_REFRESH" to="." method="_on_SUPP_C_REFRESH_timeout"]
+
+[connection signal="timeout" from="SUPP_D_REFRESH" to="." method="_on_SUPP_D_REFRESH_timeout"]
+
+[connection signal="timeout" from="KOTA_R" to="." method="_on_KOTA_R_timeout"]
+
+[connection signal="timeout" from="RESPONSE" to="." method="_on_RESPONSE_timeout"]
+
+[connection signal="timeout" from="RESET" to="." method="_on_RESET_timeout"]
 
 
